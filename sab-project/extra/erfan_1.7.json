@@ -1,0 +1,2409 @@
+{
+	"info": {
+		"_postman_id": "6580c2c6-19df-43da-b06b-263dd1bdd2db",
+		"name": "sup",
+		"schema": "https://schema.getpostman.com/json/collection/v2.1.0/collection.json"
+	},
+	"item": [
+		{
+			"name": "/v1/automated_transaction_types",
+			"request": {
+				"method": "GET",
+				"header": [],
+				"body": {
+					"mode": "raw",
+					"raw": ""
+				},
+				"url": {
+					"raw": "{{sup_base_url}}/v1/automated_transaction_types?name=منطقه",
+					"host": [
+						"{{sup_base_url}}"
+					],
+					"path": [
+						"v1",
+						"automated_transaction_types"
+					],
+					"query": [
+						{
+							"key": "name",
+							"value": "منطقه"
+						}
+					]
+				}
+			},
+			"response": []
+		},
+		{
+			"name": "/v1/automated_transaction_types/:id",
+			"request": {
+				"method": "GET",
+				"header": [],
+				"body": {
+					"mode": "raw",
+					"raw": ""
+				},
+				"url": {
+					"raw": "{{sup_base_url}}/v1/automated_transaction_types/4",
+					"host": [
+						"{{sup_base_url}}"
+					],
+					"path": [
+						"v1",
+						"automated_transaction_types",
+						"4"
+					]
+				}
+			},
+			"response": []
+		},
+		{
+			"name": "/v1/bank_account_financial_types",
+			"request": {
+				"method": "GET",
+				"header": [],
+				"body": {
+					"mode": "raw",
+					"raw": ""
+				},
+				"url": {
+					"raw": "{{sup_base_url}}/v1/bank_account_financial_types",
+					"host": [
+						"{{sup_base_url}}"
+					],
+					"path": [
+						"v1",
+						"bank_account_financial_types"
+					]
+				}
+			},
+			"response": []
+		},
+		{
+			"name": "/v1/bank_account_financial_types/:id",
+			"request": {
+				"method": "GET",
+				"header": [],
+				"body": {
+					"mode": "raw",
+					"raw": ""
+				},
+				"url": {
+					"raw": "{{sup_base_url}}/v1/bank_account_financial_types/1",
+					"host": [
+						"{{sup_base_url}}"
+					],
+					"path": [
+						"v1",
+						"bank_account_financial_types",
+						"1"
+					]
+				}
+			},
+			"response": []
+		},
+		{
+			"name": "/v1/bank_account_financial_types",
+			"request": {
+				"method": "POST",
+				"header": [
+					{
+						"key": "Content-Type",
+						"name": "Content-Type",
+						"value": "application/json",
+						"type": "text"
+					}
+				],
+				"body": {
+					"mode": "raw",
+					"raw": "{\n\t\"name\": \"name\"\n}"
+				},
+				"url": {
+					"raw": "{{sup_base_url}}/v1/bank_account_financial_types",
+					"host": [
+						"{{sup_base_url}}"
+					],
+					"path": [
+						"v1",
+						"bank_account_financial_types"
+					]
+				}
+			},
+			"response": []
+		},
+		{
+			"name": "/v1/bank_account_financial_types/:id",
+			"request": {
+				"method": "PATCH",
+				"header": [
+					{
+						"key": "Content-Type",
+						"name": "Content-Type",
+						"type": "text",
+						"value": "application/json"
+					}
+				],
+				"body": {
+					"mode": "raw",
+					"raw": "{\n\t\"name\": \"changed\"\n}"
+				},
+				"url": {
+					"raw": "{{sup_base_url}}/v1/bank_account_financial_types/4",
+					"host": [
+						"{{sup_base_url}}"
+					],
+					"path": [
+						"v1",
+						"bank_account_financial_types",
+						"4"
+					]
+				}
+			},
+			"response": []
+		},
+		{
+			"name": "/v1/bank_account_financial_types/:id",
+			"request": {
+				"method": "DELETE",
+				"header": [
+					{
+						"key": "Content-Type",
+						"name": "Content-Type",
+						"type": "text",
+						"value": "application/json"
+					}
+				],
+				"body": {
+					"mode": "raw",
+					"raw": ""
+				},
+				"url": {
+					"raw": "{{sup_base_url}}/v1/bank_account_financial_types/4",
+					"host": [
+						"{{sup_base_url}}"
+					],
+					"path": [
+						"v1",
+						"bank_account_financial_types",
+						"4"
+					]
+				}
+			},
+			"response": []
+		},
+		{
+			"name": "/v1/bank_account_types",
+			"request": {
+				"method": "GET",
+				"header": [],
+				"body": {
+					"mode": "raw",
+					"raw": ""
+				},
+				"url": {
+					"raw": "{{sup_base_url}}/v1/bank_account_types",
+					"host": [
+						"{{sup_base_url}}"
+					],
+					"path": [
+						"v1",
+						"bank_account_types"
+					]
+				}
+			},
+			"response": []
+		},
+		{
+			"name": "/v1/bank_account_types/:id",
+			"request": {
+				"method": "GET",
+				"header": [],
+				"body": {
+					"mode": "raw",
+					"raw": ""
+				},
+				"url": {
+					"raw": "{{sup_base_url}}/v1/bank_account_types/1",
+					"host": [
+						"{{sup_base_url}}"
+					],
+					"path": [
+						"v1",
+						"bank_account_types",
+						"1"
+					]
+				}
+			},
+			"response": []
+		},
+		{
+			"name": "/v1/bank_account_types",
+			"request": {
+				"method": "POST",
+				"header": [
+					{
+						"key": "Content-Type",
+						"name": "Content-Type",
+						"value": "application/json",
+						"type": "text"
+					}
+				],
+				"body": {
+					"mode": "raw",
+					"raw": "{\n\t\"name\": \"name\"\n}"
+				},
+				"url": {
+					"raw": "{{sup_base_url}}/v1/bank_account_types",
+					"host": [
+						"{{sup_base_url}}"
+					],
+					"path": [
+						"v1",
+						"bank_account_types"
+					]
+				}
+			},
+			"response": []
+		},
+		{
+			"name": "/v1/bank_account_types/:id",
+			"request": {
+				"method": "PATCH",
+				"header": [
+					{
+						"key": "Content-Type",
+						"name": "Content-Type",
+						"type": "text",
+						"value": "application/json"
+					}
+				],
+				"body": {
+					"mode": "raw",
+					"raw": "{\n\t\"name\": \"name\"\n}"
+				},
+				"url": {
+					"raw": "{{sup_base_url}}/v1/bank_account_types/8",
+					"host": [
+						"{{sup_base_url}}"
+					],
+					"path": [
+						"v1",
+						"bank_account_types",
+						"8"
+					]
+				}
+			},
+			"response": []
+		},
+		{
+			"name": "/v1/bank_account_types/:id",
+			"request": {
+				"method": "DELETE",
+				"header": [],
+				"body": {
+					"mode": "raw",
+					"raw": ""
+				},
+				"url": {
+					"raw": "{{sup_base_url}}/v1/bank_account_types/8",
+					"host": [
+						"{{sup_base_url}}"
+					],
+					"path": [
+						"v1",
+						"bank_account_types",
+						"8"
+					]
+				}
+			},
+			"response": []
+		},
+		{
+			"name": "/v1/bank_accounts",
+			"request": {
+				"method": "GET",
+				"header": [],
+				"body": {
+					"mode": "raw",
+					"raw": ""
+				},
+				"url": {
+					"raw": "{{sup_base_url}}/v1/bank_accounts?accountTypeId=1&accountNumber=1650048768",
+					"host": [
+						"{{sup_base_url}}"
+					],
+					"path": [
+						"v1",
+						"bank_accounts"
+					],
+					"query": [
+						{
+							"key": "accountTypeId",
+							"value": "1"
+						},
+						{
+							"key": "accountNumber",
+							"value": "1650048768"
+						}
+					]
+				}
+			},
+			"response": []
+		},
+		{
+			"name": "/v1/bank_accounts/:id",
+			"request": {
+				"method": "GET",
+				"header": [],
+				"body": {
+					"mode": "raw",
+					"raw": ""
+				},
+				"url": {
+					"raw": "{{sup_base_url}}/v1/banks/1",
+					"host": [
+						"{{sup_base_url}}"
+					],
+					"path": [
+						"v1",
+						"banks",
+						"1"
+					]
+				}
+			},
+			"response": []
+		},
+		{
+			"name": "/v1/bank_accounts",
+			"request": {
+				"method": "POST",
+				"header": [
+					{
+						"key": "Content-Type",
+						"name": "Content-Type",
+						"value": "application/json",
+						"type": "text"
+					}
+				],
+				"body": {
+					"mode": "raw",
+					"raw": "{\n\t\"accountNumber\": \"1650048768\",\n\t\"bankId\": 1,\n\t\"ownerName\": \"حسین عرفانی\",\n\t\"hasChequePermission\": true,\n\t\"financialTypeId\": 1,\n\t\"accountTypeId\": 2,\n\t\"headquarterConfirmation\": true,\n\t\"bankConfirmation\": true\n}"
+				},
+				"url": {
+					"raw": "{{sup_base_url}}/v1/bank_accounts",
+					"host": [
+						"{{sup_base_url}}"
+					],
+					"path": [
+						"v1",
+						"bank_accounts"
+					]
+				}
+			},
+			"response": []
+		},
+		{
+			"name": "/v1/bank_accounts/:id",
+			"request": {
+				"method": "PATCH",
+				"header": [
+					{
+						"key": "Content-Type",
+						"name": "Content-Type",
+						"value": "application/json",
+						"type": "text"
+					}
+				],
+				"body": {
+					"mode": "raw",
+					"raw": "{\n\t\"accountNumber\": \"1650048768\",\n\t\"bankId\": 1,\n\t\"ownerName\": \"سامان اقبالی\",\n\t\"hasChequePermission\": true,\n\t\"financialTypeId\": 1,\n\t\"accountTypeId\": 2,\n\t\"headquarterConfirmation\": true,\n\t\"bankConfirmation\": true\n}"
+				},
+				"url": {
+					"raw": "{{sup_base_url}}/v1/bank_accounts/4",
+					"host": [
+						"{{sup_base_url}}"
+					],
+					"path": [
+						"v1",
+						"bank_accounts",
+						"4"
+					]
+				}
+			},
+			"response": []
+		},
+		{
+			"name": "/v1/bank_accounts/:id",
+			"request": {
+				"method": "DELETE",
+				"header": [],
+				"body": {
+					"mode": "raw",
+					"raw": ""
+				},
+				"url": {
+					"raw": "{{sup_base_url}}/v1/bank_accounts/4",
+					"host": [
+						"{{sup_base_url}}"
+					],
+					"path": [
+						"v1",
+						"bank_accounts",
+						"4"
+					]
+				}
+			},
+			"response": []
+		},
+		{
+			"name": "/v1/banks",
+			"request": {
+				"method": "GET",
+				"header": [],
+				"body": {
+					"mode": "raw",
+					"raw": ""
+				},
+				"url": {
+					"raw": "{{sup_base_url}}/v1/banks",
+					"host": [
+						"{{sup_base_url}}"
+					],
+					"path": [
+						"v1",
+						"banks"
+					]
+				}
+			},
+			"response": []
+		},
+		{
+			"name": "/v1/banks/:id",
+			"request": {
+				"method": "GET",
+				"header": [],
+				"body": {
+					"mode": "raw",
+					"raw": ""
+				},
+				"url": {
+					"raw": "{{sup_base_url}}/v1/banks/1",
+					"host": [
+						"{{sup_base_url}}"
+					],
+					"path": [
+						"v1",
+						"banks",
+						"1"
+					]
+				}
+			},
+			"response": []
+		},
+		{
+			"name": "/v1/banks",
+			"request": {
+				"method": "POST",
+				"header": [
+					{
+						"key": "Content-Type",
+						"name": "Content-Type",
+						"value": "application/json",
+						"type": "text"
+					}
+				],
+				"body": {
+					"mode": "raw",
+					"raw": "{\n\t\"name\": \"name\"\n}"
+				},
+				"url": {
+					"raw": "{{sup_base_url}}/v1/banks",
+					"host": [
+						"{{sup_base_url}}"
+					],
+					"path": [
+						"v1",
+						"banks"
+					]
+				}
+			},
+			"response": []
+		},
+		{
+			"name": "/v1/banks/:id",
+			"request": {
+				"method": "PATCH",
+				"header": [
+					{
+						"key": "Content-Type",
+						"name": "Content-Type",
+						"value": "application/json",
+						"type": "text"
+					}
+				],
+				"body": {
+					"mode": "raw",
+					"raw": "{\n\t\"name\": \"changed\"\n}"
+				},
+				"url": {
+					"raw": "{{sup_base_url}}/v1/banks/4",
+					"host": [
+						"{{sup_base_url}}"
+					],
+					"path": [
+						"v1",
+						"banks",
+						"4"
+					]
+				}
+			},
+			"response": []
+		},
+		{
+			"name": "/v1/banks/:id",
+			"request": {
+				"method": "DELETE",
+				"header": [
+					{
+						"key": "Content-Type",
+						"name": "Content-Type",
+						"value": "application/json",
+						"type": "text"
+					}
+				],
+				"body": {
+					"mode": "raw",
+					"raw": ""
+				},
+				"url": {
+					"raw": "{{sup_base_url}}/v1/banks/4",
+					"host": [
+						"{{sup_base_url}}"
+					],
+					"path": [
+						"v1",
+						"banks",
+						"4"
+					]
+				}
+			},
+			"response": []
+		},
+		{
+			"name": "/v1/states/:id/cities",
+			"request": {
+				"method": "GET",
+				"header": [],
+				"body": {
+					"mode": "raw",
+					"raw": ""
+				},
+				"url": {
+					"raw": "{{sup_base_url}}/v1/cities?stateId=1",
+					"host": [
+						"{{sup_base_url}}"
+					],
+					"path": [
+						"v1",
+						"cities"
+					],
+					"query": [
+						{
+							"key": "stateId",
+							"value": "1"
+						},
+						{
+							"key": "name",
+							"value": "هش",
+							"disabled": true
+						}
+					]
+				}
+			},
+			"response": []
+		},
+		{
+			"name": "/v1/cities/:id",
+			"request": {
+				"method": "GET",
+				"header": [],
+				"body": {
+					"mode": "raw",
+					"raw": ""
+				},
+				"url": {
+					"raw": "{{sup_base_url}}/v1/cities/1",
+					"host": [
+						"{{sup_base_url}}"
+					],
+					"path": [
+						"v1",
+						"cities",
+						"1"
+					]
+				}
+			},
+			"response": []
+		},
+		{
+			"name": "/v1/cities",
+			"request": {
+				"method": "POST",
+				"header": [
+					{
+						"key": "Content-Type",
+						"name": "Content-Type",
+						"value": "application/json",
+						"type": "text"
+					}
+				],
+				"body": {
+					"mode": "raw",
+					"raw": "{\n\t\"name\": \"name\"\n}"
+				},
+				"url": {
+					"raw": "{{sup_base_url}}/v1/cities",
+					"host": [
+						"{{sup_base_url}}"
+					],
+					"path": [
+						"v1",
+						"cities"
+					]
+				}
+			},
+			"response": []
+		},
+		{
+			"name": "/v1/cities/:id",
+			"request": {
+				"method": "PATCH",
+				"header": [
+					{
+						"key": "Content-Type",
+						"name": "Content-Type",
+						"value": "application/json",
+						"type": "text"
+					}
+				],
+				"body": {
+					"mode": "raw",
+					"raw": "{\n\t\"name\": \"changed\"\n}"
+				},
+				"url": {
+					"raw": "{{sup_base_url}}/v1/cities/1134",
+					"host": [
+						"{{sup_base_url}}"
+					],
+					"path": [
+						"v1",
+						"cities",
+						"1134"
+					]
+				}
+			},
+			"response": []
+		},
+		{
+			"name": "/v1/cities/:id",
+			"request": {
+				"method": "DELETE",
+				"header": [
+					{
+						"key": "Content-Type",
+						"name": "Content-Type",
+						"type": "text",
+						"value": "application/json"
+					}
+				],
+				"body": {
+					"mode": "raw",
+					"raw": ""
+				},
+				"url": {
+					"raw": "{{sup_base_url}}/v1/cities/1134",
+					"host": [
+						"{{sup_base_url}}"
+					],
+					"path": [
+						"v1",
+						"cities",
+						"1134"
+					]
+				}
+			},
+			"response": []
+		},
+		{
+			"name": "/v1/countries",
+			"request": {
+				"method": "GET",
+				"header": [],
+				"body": {
+					"mode": "raw",
+					"raw": ""
+				},
+				"url": {
+					"raw": "{{sup_base_url}}/v1/countries",
+					"host": [
+						"{{sup_base_url}}"
+					],
+					"path": [
+						"v1",
+						"countries"
+					]
+				}
+			},
+			"response": []
+		},
+		{
+			"name": "/v1/countries/:id",
+			"request": {
+				"method": "GET",
+				"header": [],
+				"body": {
+					"mode": "raw",
+					"raw": ""
+				},
+				"url": {
+					"raw": "{{sup_base_url}}/v1/countries/1",
+					"host": [
+						"{{sup_base_url}}"
+					],
+					"path": [
+						"v1",
+						"countries",
+						"1"
+					]
+				}
+			},
+			"response": []
+		},
+		{
+			"name": "/v1/customer_groups",
+			"request": {
+				"method": "GET",
+				"header": [],
+				"body": {
+					"mode": "raw",
+					"raw": ""
+				},
+				"url": {
+					"raw": "{{sup_base_url}}/v1/customer_groups",
+					"host": [
+						"{{sup_base_url}}"
+					],
+					"path": [
+						"v1",
+						"customer_groups"
+					]
+				}
+			},
+			"response": []
+		},
+		{
+			"name": "/v1/customer_groups/:id",
+			"request": {
+				"method": "GET",
+				"header": [],
+				"body": {
+					"mode": "raw",
+					"raw": ""
+				},
+				"url": {
+					"raw": "{{sup_base_url}}/v1/customer_groups/1",
+					"host": [
+						"{{sup_base_url}}"
+					],
+					"path": [
+						"v1",
+						"customer_groups",
+						"1"
+					]
+				}
+			},
+			"response": []
+		},
+		{
+			"name": "/v1/customer_groups",
+			"request": {
+				"method": "POST",
+				"header": [
+					{
+						"key": "Content-Type",
+						"name": "Content-Type",
+						"value": "application/json",
+						"type": "text"
+					}
+				],
+				"body": {
+					"mode": "raw",
+					"raw": "{\n\t\"name\": \"name\"\n}"
+				},
+				"url": {
+					"raw": "{{sup_base_url}}/v1/customer_groups",
+					"host": [
+						"{{sup_base_url}}"
+					],
+					"path": [
+						"v1",
+						"customer_groups"
+					]
+				}
+			},
+			"response": []
+		},
+		{
+			"name": "/v1/customer_groups/:id",
+			"request": {
+				"method": "PATCH",
+				"header": [
+					{
+						"key": "Content-Type",
+						"name": "Content-Type",
+						"type": "text",
+						"value": "application/json"
+					}
+				],
+				"body": {
+					"mode": "raw",
+					"raw": "{\n\t\"name\": \"changed\"\n}"
+				},
+				"url": {
+					"raw": "{{sup_base_url}}/v1/customer_groups/4",
+					"host": [
+						"{{sup_base_url}}"
+					],
+					"path": [
+						"v1",
+						"customer_groups",
+						"4"
+					]
+				}
+			},
+			"response": []
+		},
+		{
+			"name": "/v1/customer_groups/:id",
+			"request": {
+				"method": "DELETE",
+				"header": [],
+				"body": {
+					"mode": "raw",
+					"raw": ""
+				},
+				"url": {
+					"raw": "{{sup_base_url}}/v1/customer_groups/4",
+					"host": [
+						"{{sup_base_url}}"
+					],
+					"path": [
+						"v1",
+						"customer_groups",
+						"4"
+					]
+				}
+			},
+			"response": []
+		},
+		{
+			"name": "/v1/customer_supply_channels",
+			"request": {
+				"method": "GET",
+				"header": [],
+				"body": {
+					"mode": "raw",
+					"raw": ""
+				},
+				"url": {
+					"raw": "{{sup_base_url}}/v1/customer_supply_channels",
+					"host": [
+						"{{sup_base_url}}"
+					],
+					"path": [
+						"v1",
+						"customer_supply_channels"
+					]
+				}
+			},
+			"response": []
+		},
+		{
+			"name": "/v1/customer_supply_channels/:id",
+			"request": {
+				"method": "GET",
+				"header": [],
+				"body": {
+					"mode": "raw",
+					"raw": ""
+				},
+				"url": {
+					"raw": "{{sup_base_url}}/v1/customer_supply_channels/1",
+					"host": [
+						"{{sup_base_url}}"
+					],
+					"path": [
+						"v1",
+						"customer_supply_channels",
+						"1"
+					]
+				}
+			},
+			"response": []
+		},
+		{
+			"name": "/v1/customer_supply_channels",
+			"request": {
+				"method": "POST",
+				"header": [
+					{
+						"key": "Content-Type",
+						"name": "Content-Type",
+						"value": "application/json",
+						"type": "text"
+					}
+				],
+				"body": {
+					"mode": "raw",
+					"raw": "{\n\t\"name\": \"name\"\n}"
+				},
+				"url": {
+					"raw": "{{sup_base_url}}/v1/customer_supply_channels",
+					"host": [
+						"{{sup_base_url}}"
+					],
+					"path": [
+						"v1",
+						"customer_supply_channels"
+					]
+				}
+			},
+			"response": []
+		},
+		{
+			"name": "/v1/customer_supply_channels/:id",
+			"request": {
+				"method": "PATCH",
+				"header": [
+					{
+						"key": "Content-Type",
+						"name": "Content-Type",
+						"value": "application/json",
+						"type": "text"
+					}
+				],
+				"body": {
+					"mode": "raw",
+					"raw": "{\n\t\"name\": \"changed\"\n}"
+				},
+				"url": {
+					"raw": "{{sup_base_url}}/v1/customer_supply_channels/4",
+					"host": [
+						"{{sup_base_url}}"
+					],
+					"path": [
+						"v1",
+						"customer_supply_channels",
+						"4"
+					]
+				}
+			},
+			"response": []
+		},
+		{
+			"name": "/v1/customer_supply_channels/:id",
+			"request": {
+				"method": "DELETE",
+				"header": [
+					{
+						"key": "Content-Type",
+						"name": "Content-Type",
+						"type": "text",
+						"value": "application/json"
+					}
+				],
+				"body": {
+					"mode": "raw",
+					"raw": ""
+				},
+				"url": {
+					"raw": "{{sup_base_url}}/v1/customer_supply_channels/4",
+					"host": [
+						"{{sup_base_url}}"
+					],
+					"path": [
+						"v1",
+						"customer_supply_channels",
+						"4"
+					]
+				}
+			},
+			"response": []
+		},
+		{
+			"name": "/v1/customer_types",
+			"request": {
+				"method": "GET",
+				"header": [],
+				"body": {
+					"mode": "raw",
+					"raw": ""
+				},
+				"url": {
+					"raw": "{{sup_base_url}}/v1/customer_types",
+					"host": [
+						"{{sup_base_url}}"
+					],
+					"path": [
+						"v1",
+						"customer_types"
+					]
+				}
+			},
+			"response": []
+		},
+		{
+			"name": "/v1/customer_types/:id",
+			"request": {
+				"method": "GET",
+				"header": [],
+				"body": {
+					"mode": "raw",
+					"raw": ""
+				},
+				"url": {
+					"raw": "{{sup_base_url}}/v1/customer_types/1",
+					"host": [
+						"{{sup_base_url}}"
+					],
+					"path": [
+						"v1",
+						"customer_types",
+						"1"
+					]
+				}
+			},
+			"response": []
+		},
+		{
+			"name": "/v1/customer_types",
+			"request": {
+				"method": "POST",
+				"header": [
+					{
+						"key": "Content-Type",
+						"name": "Content-Type",
+						"value": "application/json",
+						"type": "text"
+					}
+				],
+				"body": {
+					"mode": "raw",
+					"raw": "{\n\t\"name\": \"name\"\n}"
+				},
+				"url": {
+					"raw": "{{sup_base_url}}/v1/customer_types",
+					"host": [
+						"{{sup_base_url}}"
+					],
+					"path": [
+						"v1",
+						"customer_types"
+					]
+				}
+			},
+			"response": []
+		},
+		{
+			"name": "/v1/customer_types/:id",
+			"request": {
+				"method": "PATCH",
+				"header": [
+					{
+						"key": "Content-Type",
+						"name": "Content-Type",
+						"value": "application/json",
+						"type": "text"
+					}
+				],
+				"body": {
+					"mode": "raw",
+					"raw": "{\n\t\"name\": \"changed\"\n}"
+				},
+				"url": {
+					"raw": "{{sup_base_url}}/v1/customer_types/90",
+					"host": [
+						"{{sup_base_url}}"
+					],
+					"path": [
+						"v1",
+						"customer_types",
+						"90"
+					]
+				}
+			},
+			"response": []
+		},
+		{
+			"name": "/v1/customer_types/:id",
+			"request": {
+				"method": "DELETE",
+				"header": [
+					{
+						"key": "Content-Type",
+						"name": "Content-Type",
+						"value": "application/json",
+						"type": "text"
+					}
+				],
+				"body": {
+					"mode": "raw",
+					"raw": ""
+				},
+				"url": {
+					"raw": "{{sup_base_url}}/v1/customer_types/90",
+					"host": [
+						"{{sup_base_url}}"
+					],
+					"path": [
+						"v1",
+						"customer_types",
+						"90"
+					]
+				}
+			},
+			"response": []
+		},
+		{
+			"name": "/v1/customer_usage_types",
+			"request": {
+				"method": "GET",
+				"header": [],
+				"body": {
+					"mode": "raw",
+					"raw": ""
+				},
+				"url": {
+					"raw": "{{sup_base_url}}/v1/customer_usage_types",
+					"host": [
+						"{{sup_base_url}}"
+					],
+					"path": [
+						"v1",
+						"customer_usage_types"
+					]
+				}
+			},
+			"response": []
+		},
+		{
+			"name": "/v1/customer_usage_types/:id",
+			"request": {
+				"method": "GET",
+				"header": [],
+				"body": {
+					"mode": "raw",
+					"raw": ""
+				},
+				"url": {
+					"raw": "{{sup_base_url}}/v1/customer_usage_types/1",
+					"host": [
+						"{{sup_base_url}}"
+					],
+					"path": [
+						"v1",
+						"customer_usage_types",
+						"1"
+					]
+				}
+			},
+			"response": []
+		},
+		{
+			"name": "/v1/customer_usage_types",
+			"request": {
+				"method": "POST",
+				"header": [
+					{
+						"key": "Content-Type",
+						"name": "Content-Type",
+						"value": "application/json",
+						"type": "text"
+					}
+				],
+				"body": {
+					"mode": "raw",
+					"raw": "{\n\t\"name\": \"name\"\n}"
+				},
+				"url": {
+					"raw": "{{sup_base_url}}/v1/customer_usage_types",
+					"host": [
+						"{{sup_base_url}}"
+					],
+					"path": [
+						"v1",
+						"customer_usage_types"
+					]
+				}
+			},
+			"response": []
+		},
+		{
+			"name": "/v1/customer_usage_types/:id",
+			"request": {
+				"method": "PATCH",
+				"header": [
+					{
+						"key": "Content-Type",
+						"name": "Content-Type",
+						"value": "application/json",
+						"type": "text"
+					}
+				],
+				"body": {
+					"mode": "raw",
+					"raw": "{\n\t\"name\": \"changed\"\n}"
+				},
+				"url": {
+					"raw": "{{sup_base_url}}/v1/customer_usage_types/10",
+					"host": [
+						"{{sup_base_url}}"
+					],
+					"path": [
+						"v1",
+						"customer_usage_types",
+						"10"
+					]
+				}
+			},
+			"response": []
+		},
+		{
+			"name": "/v1/customer_usage_types/:id Copy",
+			"request": {
+				"method": "DELETE",
+				"header": [
+					{
+						"key": "Content-Type",
+						"name": "Content-Type",
+						"value": "application/json",
+						"type": "text"
+					}
+				],
+				"body": {
+					"mode": "raw",
+					"raw": ""
+				},
+				"url": {
+					"raw": "{{sup_base_url}}/v1/customer_usage_types/10",
+					"host": [
+						"{{sup_base_url}}"
+					],
+					"path": [
+						"v1",
+						"customer_usage_types",
+						"10"
+					]
+				}
+			},
+			"response": []
+		},
+		{
+			"name": "/v1/flags",
+			"request": {
+				"method": "GET",
+				"header": [],
+				"body": {
+					"mode": "raw",
+					"raw": ""
+				},
+				"url": {
+					"raw": "{{sup_base_url}}/v1/flags",
+					"host": [
+						"{{sup_base_url}}"
+					],
+					"path": [
+						"v1",
+						"flags"
+					]
+				}
+			},
+			"response": []
+		},
+		{
+			"name": "/v1/flags/:id",
+			"request": {
+				"method": "GET",
+				"header": [],
+				"body": {
+					"mode": "raw",
+					"raw": ""
+				},
+				"url": {
+					"raw": "{{sup_base_url}}/v1/flags/1",
+					"host": [
+						"{{sup_base_url}}"
+					],
+					"path": [
+						"v1",
+						"flags",
+						"1"
+					]
+				}
+			},
+			"response": []
+		},
+		{
+			"name": "/v1/menu_permitted_actions",
+			"request": {
+				"method": "GET",
+				"header": [],
+				"body": {
+					"mode": "raw",
+					"raw": ""
+				},
+				"url": {
+					"raw": "{{sup_base_url}}/v1/menu_permitted_actions",
+					"host": [
+						"{{sup_base_url}}"
+					],
+					"path": [
+						"v1",
+						"menu_permitted_actions"
+					]
+				}
+			},
+			"response": []
+		},
+		{
+			"name": "/v1/menu_permitted_actions/:id",
+			"request": {
+				"method": "GET",
+				"header": [],
+				"body": {
+					"mode": "raw",
+					"raw": ""
+				},
+				"url": {
+					"raw": "{{sup_base_url}}/v1/menu_permitted_actions/1",
+					"host": [
+						"{{sup_base_url}}"
+					],
+					"path": [
+						"v1",
+						"menu_permitted_actions",
+						"1"
+					]
+				}
+			},
+			"response": []
+		},
+		{
+			"name": "/v1/headquarters",
+			"request": {
+				"method": "GET",
+				"header": [],
+				"body": {
+					"mode": "raw",
+					"raw": ""
+				},
+				"url": {
+					"raw": "{{sup_base_url}}/v1/headquarters?=1567901079&=1587901079&=1&=10&=id&=DESC",
+					"host": [
+						"{{sup_base_url}}"
+					],
+					"path": [
+						"v1",
+						"headquarters"
+					],
+					"query": [
+						{
+							"key": "name",
+							"value": "name",
+							"disabled": true
+						},
+						{
+							"key": "",
+							"value": "1567901079"
+						},
+						{
+							"key": "",
+							"value": "1587901079"
+						},
+						{
+							"key": "",
+							"value": "1"
+						},
+						{
+							"key": "",
+							"value": "10"
+						},
+						{
+							"key": "",
+							"value": "id"
+						},
+						{
+							"key": "",
+							"value": "DESC"
+						}
+					]
+				}
+			},
+			"response": []
+		},
+		{
+			"name": "/v1/headquarters/:id",
+			"request": {
+				"method": "GET",
+				"header": [],
+				"body": {
+					"mode": "raw",
+					"raw": ""
+				},
+				"url": {
+					"raw": "{{sup_base_url}}/v1/headquarters/6",
+					"host": [
+						"{{sup_base_url}}"
+					],
+					"path": [
+						"v1",
+						"headquarters",
+						"6"
+					]
+				}
+			},
+			"response": []
+		},
+		{
+			"name": "/v1/headquarters",
+			"request": {
+				"method": "POST",
+				"header": [
+					{
+						"key": "Content-Type",
+						"name": "Content-Type",
+						"value": "application/json",
+						"type": "text"
+					}
+				],
+				"body": {
+					"mode": "raw",
+					"raw": "{\n\t\"name\": \"MainHeadquarter\",\n\t\"email\": \"h_erf@icloud.com\",\n\t\"financialCode\": \"fc\",\n\t\"slaseCode\": \"sc\",\n\t\"depositId\": \"di\",\n\t\"publicDepositId\": \"pdi\"\n}"
+				},
+				"url": {
+					"raw": "{{sup_base_url}}/v1/headquarters",
+					"host": [
+						"{{sup_base_url}}"
+					],
+					"path": [
+						"v1",
+						"headquarters"
+					]
+				}
+			},
+			"response": []
+		},
+		{
+			"name": "/v1/headquarters/:id",
+			"request": {
+				"method": "PATCH",
+				"header": [
+					{
+						"key": "Content-Type",
+						"name": "Content-Type",
+						"type": "text",
+						"value": "application/json"
+					}
+				],
+				"body": {
+					"mode": "raw",
+					"raw": "{\n\t\"name\": \"Changed\",\n\t\"email\": \"h_erf@icloud.com\",\n\t\"financialCode\": \"fc\",\n\t\"slaseCode\": \"sc\",\n\t\"depositId\": \"di\",\n\t\"publicDepositId\": \"pdi\"\n}"
+				},
+				"url": {
+					"raw": "{{sup_base_url}}/v1/headquarters/9",
+					"host": [
+						"{{sup_base_url}}"
+					],
+					"path": [
+						"v1",
+						"headquarters",
+						"9"
+					]
+				}
+			},
+			"response": []
+		},
+		{
+			"name": "/v1/headquarters/:id",
+			"request": {
+				"method": "DELETE",
+				"header": [
+					{
+						"key": "Content-Type",
+						"name": "Content-Type",
+						"value": "application/json",
+						"type": "text"
+					}
+				],
+				"body": {
+					"mode": "raw",
+					"raw": ""
+				},
+				"url": {
+					"raw": "{{sup_base_url}}/v1/headquarters/9",
+					"host": [
+						"{{sup_base_url}}"
+					],
+					"path": [
+						"v1",
+						"headquarters",
+						"9"
+					]
+				}
+			},
+			"response": []
+		},
+		{
+			"name": "/v1/regions",
+			"request": {
+				"method": "GET",
+				"header": [],
+				"body": {
+					"mode": "raw",
+					"raw": ""
+				},
+				"url": {
+					"raw": "{{sup_base_url}}/v1/regions?",
+					"host": [
+						"{{sup_base_url}}"
+					],
+					"path": [
+						"v1",
+						"regions"
+					],
+					"query": [
+						{
+							"key": "name",
+							"value": "name",
+							"disabled": true
+						},
+						{
+							"key": "",
+							"value": "1567901079",
+							"disabled": true
+						},
+						{
+							"key": "",
+							"value": "1587901079",
+							"disabled": true
+						},
+						{
+							"key": "",
+							"value": "1",
+							"disabled": true
+						},
+						{
+							"key": "",
+							"value": "10",
+							"disabled": true
+						},
+						{
+							"key": "",
+							"value": "id",
+							"disabled": true
+						},
+						{
+							"key": "",
+							"value": "DESC",
+							"disabled": true
+						}
+					]
+				}
+			},
+			"response": []
+		},
+		{
+			"name": "/v1/regions/:id",
+			"request": {
+				"method": "GET",
+				"header": [],
+				"body": {
+					"mode": "raw",
+					"raw": ""
+				},
+				"url": {
+					"raw": "{{sup_base_url}}/v1/regions/6",
+					"host": [
+						"{{sup_base_url}}"
+					],
+					"path": [
+						"v1",
+						"regions",
+						"6"
+					]
+				}
+			},
+			"response": []
+		},
+		{
+			"name": "/v1/regions",
+			"request": {
+				"method": "POST",
+				"header": [
+					{
+						"key": "Content-Type",
+						"name": "Content-Type",
+						"type": "text",
+						"value": "application/json"
+					}
+				],
+				"body": {
+					"mode": "raw",
+					"raw": "{\n\t\"name\": \"Region\",\n\t\"email\": \"h_erf@icloud.com\",\n\t\"financialCode\": \"fc\",\n\t\"slaseCode\": \"sc\",\n\t\"depositId\": \"di\",\n\t\"publicDepositId\": \"pdi\",\n\t\"parentId\": 5\n}"
+				},
+				"url": {
+					"raw": "{{sup_base_url}}/v1/regions",
+					"host": [
+						"{{sup_base_url}}"
+					],
+					"path": [
+						"v1",
+						"regions"
+					]
+				}
+			},
+			"response": []
+		},
+		{
+			"name": "/v1/regions/:id",
+			"request": {
+				"method": "PATCH",
+				"header": [
+					{
+						"key": "Content-Type",
+						"name": "Content-Type",
+						"type": "text",
+						"value": "application/json"
+					}
+				],
+				"body": {
+					"mode": "raw",
+					"raw": "{\n\t\"name\": \"Changed\",\n\t\"email\": \"h_erf@icloud.com\",\n\t\"financialCode\": \"fc\",\n\t\"slaseCode\": \"sc\",\n\t\"depositId\": \"di\",\n\t\"publicDepositId\": \"pdi\",\n\t\"parentId\": 10\n}"
+				},
+				"url": {
+					"raw": "{{sup_base_url}}/v1/regions/5",
+					"host": [
+						"{{sup_base_url}}"
+					],
+					"path": [
+						"v1",
+						"regions",
+						"5"
+					]
+				}
+			},
+			"response": []
+		},
+		{
+			"name": "/v1/regions/:id",
+			"request": {
+				"method": "DELETE",
+				"header": [
+					{
+						"key": "Content-Type",
+						"name": "Content-Type",
+						"type": "text",
+						"value": "application/json"
+					}
+				],
+				"body": {
+					"mode": "raw",
+					"raw": ""
+				},
+				"url": {
+					"raw": "{{sup_base_url}}/v1/regions/11",
+					"host": [
+						"{{sup_base_url}}"
+					],
+					"path": [
+						"v1",
+						"regions",
+						"11"
+					]
+				}
+			},
+			"response": []
+		},
+		{
+			"name": "/v1/areas",
+			"request": {
+				"method": "GET",
+				"header": [],
+				"body": {
+					"mode": "raw",
+					"raw": ""
+				},
+				"url": {
+					"raw": "{{sup_base_url}}/v1/areas?",
+					"host": [
+						"{{sup_base_url}}"
+					],
+					"path": [
+						"v1",
+						"areas"
+					],
+					"query": [
+						{
+							"key": "name",
+							"value": "name",
+							"disabled": true
+						},
+						{
+							"key": "",
+							"value": "1567901079",
+							"disabled": true
+						},
+						{
+							"key": "",
+							"value": "1587901079",
+							"disabled": true
+						},
+						{
+							"key": "",
+							"value": "1",
+							"disabled": true
+						},
+						{
+							"key": "",
+							"value": "10",
+							"disabled": true
+						},
+						{
+							"key": "",
+							"value": "id",
+							"disabled": true
+						},
+						{
+							"key": "",
+							"value": "DESC",
+							"disabled": true
+						}
+					]
+				}
+			},
+			"response": []
+		},
+		{
+			"name": "/v1/areas/:id",
+			"request": {
+				"method": "GET",
+				"header": [],
+				"body": {
+					"mode": "raw",
+					"raw": ""
+				},
+				"url": {
+					"raw": "{{sup_base_url}}/v1/areas/6",
+					"host": [
+						"{{sup_base_url}}"
+					],
+					"path": [
+						"v1",
+						"areas",
+						"6"
+					]
+				}
+			},
+			"response": []
+		},
+		{
+			"name": "/v1/areas",
+			"request": {
+				"method": "POST",
+				"header": [
+					{
+						"key": "Content-Type",
+						"name": "Content-Type",
+						"type": "text",
+						"value": "application/json"
+					}
+				],
+				"body": {
+					"mode": "raw",
+					"raw": "{\n\t\"name\": \"Area\",\n\t\"email\": \"h_erf@icloud.com\",\n\t\"financialCode\": \"fc\",\n\t\"slaseCode\": \"sc\",\n\t\"depositId\": \"di\",\n\t\"publicDepositId\": \"pdi\",\n\t\"parentId\": 26\n}"
+				},
+				"url": {
+					"raw": "{{sup_base_url}}/v1/areas",
+					"host": [
+						"{{sup_base_url}}"
+					],
+					"path": [
+						"v1",
+						"areas"
+					]
+				}
+			},
+			"response": []
+		},
+		{
+			"name": "/v1/areas/:id",
+			"request": {
+				"method": "PATCH",
+				"header": [
+					{
+						"key": "Content-Type",
+						"name": "Content-Type",
+						"type": "text",
+						"value": "application/json"
+					}
+				],
+				"body": {
+					"mode": "raw",
+					"raw": "{\n\t\"name\": \"Changed3\",\n\t\"email\": \"email\",\n\t\"financialCode\": \"2345\",\n\t\"salesCode\": \"111\",\n\t\"depositId\": 55,\n\t\"publicDepositId\": 5345,\n\t\"parentId\": 11,\n\t\"level\": 1\n}"
+				},
+				"url": {
+					"raw": "{{sup_base_url}}/v1/areas/16",
+					"host": [
+						"{{sup_base_url}}"
+					],
+					"path": [
+						"v1",
+						"areas",
+						"16"
+					]
+				}
+			},
+			"response": []
+		},
+		{
+			"name": "/v1/areas/:id",
+			"request": {
+				"method": "DELETE",
+				"header": [
+					{
+						"key": "Content-Type",
+						"name": "Content-Type",
+						"type": "text",
+						"value": "application/json"
+					}
+				],
+				"body": {
+					"mode": "raw",
+					"raw": ""
+				},
+				"url": {
+					"raw": "{{sup_base_url}}/v1/areas/16",
+					"host": [
+						"{{sup_base_url}}"
+					],
+					"path": [
+						"v1",
+						"areas",
+						"16"
+					]
+				}
+			},
+			"response": []
+		},
+		{
+			"name": "/v1/states",
+			"request": {
+				"method": "GET",
+				"header": [],
+				"body": {
+					"mode": "raw",
+					"raw": ""
+				},
+				"url": {
+					"raw": "{{sup_base_url}}/v1/states?",
+					"host": [
+						"{{sup_base_url}}"
+					],
+					"path": [
+						"v1",
+						"states"
+					],
+					"query": [
+						{
+							"key": "page",
+							"value": "3",
+							"disabled": true
+						}
+					]
+				}
+			},
+			"response": []
+		},
+		{
+			"name": "/v1/states/:id",
+			"request": {
+				"method": "GET",
+				"header": [],
+				"body": {
+					"mode": "raw",
+					"raw": ""
+				},
+				"url": {
+					"raw": "{{sup_base_url}}/v1/states/1",
+					"host": [
+						"{{sup_base_url}}"
+					],
+					"path": [
+						"v1",
+						"states",
+						"1"
+					]
+				}
+			},
+			"response": []
+		},
+		{
+			"name": "/v1/states",
+			"request": {
+				"method": "POST",
+				"header": [
+					{
+						"key": "Content-Type",
+						"name": "Content-Type",
+						"type": "text",
+						"value": "application/json"
+					}
+				],
+				"body": {
+					"mode": "raw",
+					"raw": "{\n\t\"name\": \"name\"\n}"
+				},
+				"url": {
+					"raw": "{{sup_base_url}}/v1/states",
+					"host": [
+						"{{sup_base_url}}"
+					],
+					"path": [
+						"v1",
+						"states"
+					]
+				}
+			},
+			"response": []
+		},
+		{
+			"name": "/v1/states/:id",
+			"request": {
+				"method": "PATCH",
+				"header": [
+					{
+						"key": "Content-Type",
+						"name": "Content-Type",
+						"value": "application/json",
+						"type": "text"
+					}
+				],
+				"body": {
+					"mode": "raw",
+					"raw": "{\n\t\"name\": \"changed\"\n}"
+				},
+				"url": {
+					"raw": "{{sup_base_url}}/v1/states/34",
+					"host": [
+						"{{sup_base_url}}"
+					],
+					"path": [
+						"v1",
+						"states",
+						"34"
+					]
+				}
+			},
+			"response": []
+		},
+		{
+			"name": "/v1/states/:id",
+			"request": {
+				"method": "DELETE",
+				"header": [
+					{
+						"key": "Content-Type",
+						"name": "Content-Type",
+						"type": "text",
+						"value": "application/json"
+					}
+				],
+				"body": {
+					"mode": "raw",
+					"raw": ""
+				},
+				"url": {
+					"raw": "{{sup_base_url}}/v1/states/34",
+					"host": [
+						"{{sup_base_url}}"
+					],
+					"path": [
+						"v1",
+						"states",
+						"34"
+					]
+				}
+			},
+			"response": []
+		},
+		{
+			"name": "/v1/transaction_media",
+			"request": {
+				"method": "GET",
+				"header": [],
+				"body": {
+					"mode": "raw",
+					"raw": ""
+				},
+				"url": {
+					"raw": "{{sup_base_url}}/v1/transaction_media",
+					"host": [
+						"{{sup_base_url}}"
+					],
+					"path": [
+						"v1",
+						"transaction_media"
+					]
+				}
+			},
+			"response": []
+		},
+		{
+			"name": "/v1/transaction_media/:id",
+			"request": {
+				"method": "GET",
+				"header": [],
+				"body": {
+					"mode": "raw",
+					"raw": ""
+				},
+				"url": {
+					"raw": "{{sup_base_url}}/v1/transaction_media/1",
+					"host": [
+						"{{sup_base_url}}"
+					],
+					"path": [
+						"v1",
+						"transaction_media",
+						"1"
+					]
+				}
+			},
+			"response": []
+		},
+		{
+			"name": "/v1/transaction_methods",
+			"request": {
+				"method": "GET",
+				"header": [],
+				"body": {
+					"mode": "raw",
+					"raw": ""
+				},
+				"url": {
+					"raw": "{{sup_base_url}}/v1/transaction_methods",
+					"host": [
+						"{{sup_base_url}}"
+					],
+					"path": [
+						"v1",
+						"transaction_methods"
+					]
+				}
+			},
+			"response": []
+		},
+		{
+			"name": "/v1/transaction_methods/:id",
+			"request": {
+				"method": "GET",
+				"header": [],
+				"body": {
+					"mode": "raw",
+					"raw": ""
+				},
+				"url": {
+					"raw": "{{sup_base_url}}/v1/transaction_methods/1",
+					"host": [
+						"{{sup_base_url}}"
+					],
+					"path": [
+						"v1",
+						"transaction_methods",
+						"1"
+					]
+				}
+			},
+			"response": []
+		},
+		{
+			"name": "/v1/transaction_situations",
+			"request": {
+				"method": "GET",
+				"header": [],
+				"body": {
+					"mode": "raw",
+					"raw": ""
+				},
+				"url": {
+					"raw": "{{sup_base_url}}/v1/transaction_situations",
+					"host": [
+						"{{sup_base_url}}"
+					],
+					"path": [
+						"v1",
+						"transaction_situations"
+					]
+				}
+			},
+			"response": []
+		},
+		{
+			"name": "/v1/transaction_situations/:id",
+			"request": {
+				"method": "GET",
+				"header": [],
+				"body": {
+					"mode": "raw",
+					"raw": ""
+				},
+				"url": {
+					"raw": "{{sup_base_url}}/v1/transaction_situations/1",
+					"host": [
+						"{{sup_base_url}}"
+					],
+					"path": [
+						"v1",
+						"transaction_situations",
+						"1"
+					]
+				}
+			},
+			"response": []
+		},
+		{
+			"name": "/v1/transaction_type_grades",
+			"request": {
+				"method": "GET",
+				"header": [],
+				"body": {
+					"mode": "raw",
+					"raw": ""
+				},
+				"url": {
+					"raw": "{{sup_base_url}}/v1/transaction_type_grades",
+					"host": [
+						"{{sup_base_url}}"
+					],
+					"path": [
+						"v1",
+						"transaction_type_grades"
+					]
+				}
+			},
+			"response": []
+		},
+		{
+			"name": "/v1/transaction_type_grades/:id",
+			"request": {
+				"method": "GET",
+				"header": [],
+				"body": {
+					"mode": "raw",
+					"raw": ""
+				},
+				"url": {
+					"raw": "{{sup_base_url}}/v1/transaction_type_grades/1",
+					"host": [
+						"{{sup_base_url}}"
+					],
+					"path": [
+						"v1",
+						"transaction_type_grades",
+						"1"
+					]
+				}
+			},
+			"response": []
+		},
+		{
+			"name": "/v1/transaction_types",
+			"request": {
+				"method": "GET",
+				"header": [],
+				"body": {
+					"mode": "raw",
+					"raw": ""
+				},
+				"url": {
+					"raw": "{{sup_base_url}}/v1/transaction_types",
+					"host": [
+						"{{sup_base_url}}"
+					],
+					"path": [
+						"v1",
+						"transaction_types"
+					]
+				}
+			},
+			"response": []
+		},
+		{
+			"name": "/v1/transaction_types/:id",
+			"request": {
+				"method": "GET",
+				"header": [],
+				"body": {
+					"mode": "raw",
+					"raw": ""
+				},
+				"url": {
+					"raw": "{{sup_base_url}}/v1/transaction_types/1",
+					"host": [
+						"{{sup_base_url}}"
+					],
+					"path": [
+						"v1",
+						"transaction_types",
+						"1"
+					]
+				}
+			},
+			"response": []
+		},
+		{
+			"name": "/v1/user_genders",
+			"request": {
+				"method": "GET",
+				"header": [],
+				"body": {
+					"mode": "raw",
+					"raw": ""
+				},
+				"url": {
+					"raw": "{{sup_base_url}}/v1/user_genders",
+					"host": [
+						"{{sup_base_url}}"
+					],
+					"path": [
+						"v1",
+						"user_genders"
+					]
+				}
+			},
+			"response": []
+		},
+		{
+			"name": "/v1/user_genders/:id",
+			"request": {
+				"method": "GET",
+				"header": [],
+				"body": {
+					"mode": "raw",
+					"raw": ""
+				},
+				"url": {
+					"raw": "{{sup_base_url}}/v1/user_genders/1",
+					"host": [
+						"{{sup_base_url}}"
+					],
+					"path": [
+						"v1",
+						"user_genders",
+						"1"
+					]
+				}
+			},
+			"response": []
+		},
+		{
+			"name": "/v1/user_levels",
+			"request": {
+				"method": "GET",
+				"header": [],
+				"body": {
+					"mode": "raw",
+					"raw": ""
+				},
+				"url": {
+					"raw": "{{sup_base_url}}/v1/user_levels",
+					"host": [
+						"{{sup_base_url}}"
+					],
+					"path": [
+						"v1",
+						"user_levels"
+					]
+				}
+			},
+			"response": []
+		},
+		{
+			"name": "/v1/user_levels/:id",
+			"request": {
+				"method": "GET",
+				"header": [],
+				"body": {
+					"mode": "raw",
+					"raw": ""
+				},
+				"url": {
+					"raw": "{{sup_base_url}}/v1/user_levels/1",
+					"host": [
+						"{{sup_base_url}}"
+					],
+					"path": [
+						"v1",
+						"user_levels",
+						"1"
+					]
+				}
+			},
+			"response": []
+		},
+		{
+			"name": "/v1/user_situations",
+			"request": {
+				"method": "GET",
+				"header": [],
+				"body": {
+					"mode": "raw",
+					"raw": ""
+				},
+				"url": {
+					"raw": "{{sup_base_url}}/v1/user_situations",
+					"host": [
+						"{{sup_base_url}}"
+					],
+					"path": [
+						"v1",
+						"user_situations"
+					]
+				}
+			},
+			"response": []
+		},
+		{
+			"name": "/v1/user_situations/:id",
+			"request": {
+				"method": "GET",
+				"header": [],
+				"body": {
+					"mode": "raw",
+					"raw": ""
+				},
+				"url": {
+					"raw": "{{sup_base_url}}/v1/user_situations/1",
+					"host": [
+						"{{sup_base_url}}"
+					],
+					"path": [
+						"v1",
+						"user_situations",
+						"1"
+					]
+				}
+			},
+			"response": []
+		}
+	]
+}

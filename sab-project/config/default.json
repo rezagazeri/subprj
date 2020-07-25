@@ -1,0 +1,151 @@
+{
+	"development": {
+		"logs": {
+            "level": "Debug",
+            "cout": true,
+            "directory": "./logs",
+            "maxLogPerFile": 10000,
+            "specials": [
+                "Verbose:*",
+                "Error:ExpressError"
+            ]
+        },
+		"sequelize": {
+			"clients": [
+				{
+					"username": "sup_user",
+					"password": "TF6@w8zxW1qM%4ey",
+					"database": "sup_db",
+					"host": "127.0.0.1",
+					"dialect": "mysql",
+					"port": 2218,
+					"pool": {
+						"max": 10,
+						"min": 0,
+						"acquire": 30000,
+						"idle": 10000
+					},
+					"define": {
+						"underscored": false,
+						"syncOnAssociation": true,
+						"charset": "utf8mb4",
+						"collate": "utf8mb4_general_ci",
+						"timestamps": false
+					},
+					"dialectOptions": {
+						"useUTC": false
+					},
+					"timezone": "Asia/Tehran"
+				}
+			]
+		},
+		"mongoose": {
+			"clients": [
+				{
+					"connectionLimit": 50,
+					"host": "localhost",
+					"port": 27017,
+					"user": "admin",
+					"password": "123456",
+					"database": "cabin",
+					"connectTimeout": 90,
+					"debug": false
+				}
+			]
+		},
+		"redis": {
+			"prefix": "sup_",
+			"list": {
+				"push": {
+					"direction": "left"
+				},
+				"pop": {
+					"direction": "right"
+				}
+			}
+		},
+		"workers": {
+			"active": true,
+			"workerNum": 5
+		},
+		"file": {
+			"url": "https://127.0.0.1:4866",
+			"location": "/home/arvin/public_html/reportfile/"
+		},
+		"port": 2032
+	},
+	"production": {
+		"logs": {
+            "level": "Debug",
+            "cout": true,
+			"directory": "./logs",
+			"maxLogPerFile": 10000,
+			"specials": [
+				"Verbose:Express"
+			]
+		},
+		"sequelize": {
+			"clients": [
+				{
+					"username": "sup_user",
+					"password": "TF6@w8zxW1qM%4ey",
+					"database": "sup_db",
+					"host": "127.0.0.1",
+					"dialect": "mysql",
+					"port": 2218,
+					"pool": {
+						"max": 10,
+						"min": 0,
+						"acquire": 30000,
+						"idle": 10000
+					},
+					"define": {
+						"underscored": false,
+						"syncOnAssociation": true,
+						"charset": "utf8mb4",
+						"collate": "utf8mb4_general_ci",
+						"timestamps": false
+					},
+					"dialectOptions": {
+						"useUTC": false
+					},
+					"timezone": "Asia/Tehran"
+				}
+			]
+		},
+		"mongoose": {
+			"clients": [
+				{
+					"connectionLimit": 50,
+					"host": "localhost",
+					"port": 27017,
+					"user": "admin",
+					"password": "123456",
+					"database": "cabin",
+					"connectTimeout": 90,
+					"debug": false
+				}
+			]
+		},
+		"redis": {
+			"prefix": "sup_",
+			"list": {
+				"push": {
+					"direction": "left"
+				},
+				"pop": {
+					"direction": "right"
+				}
+			}
+		},
+		"workers": {
+			"active": true,
+			"workerNum": 5
+		},
+		"file": {
+			"url": "https://127.0.0.1:4866",
+			"location": "/home/arvin/public_html/reportfile/"
+		},
+		"port": 2030
+	}
+}

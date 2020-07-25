@@ -1,0 +1,9 @@
+/node_modules
+/bin/index.js
+.idea
+.vscode
+/logs
+package-lock.json
+.DS_Store
+/config/behdad/logs/*.json
+config/_*

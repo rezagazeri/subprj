@@ -1,0 +1,32 @@
+{
+  "name": "express-example",
+  "version": "0.0.0",
+  "private": true,
+  "scripts": {
+    "start": "node ./sup.js",
+    "test": "find ./src -name '*_test.js' | xargs mocha -R spec"
+  },
+  "dependencies": {
+    "@hapi/joi": "^17.1.0",
+    "ajv": "^6.10.2",
+    "bluebird": "latest",
+    "body-parser": "^1.19.0",
+    "captchapng": "0.0.1",
+    "common": "git+https://erfani:6cU6ESt6Lmz3qMoqsSV2@gitt.cab-in.com:88/erfani/common.git#v2.1.4",
+    "cookie-parser": "^1.4.4",
+    "cron": "^1.7.2",
+    "express": "~4.16.0",
+    "handlebars": "^4.7.6",
+    "http-errors": "~1.6.2",
+    "md5": "^2.2.1",
+    "moment": "^2.24.0",
+    "moment-jalaali": "^0.8.3",
+    "morgan": "^1.9.1",
+    "mustache": "^4.0.1",
+    "mysql2": "^2.0.0",
+    "redis": "^2.8.0",
+    "request": "^2.88.0",
+    "sequelize": "^5.21.2",
+    "soap": "^0.30.0"
+  }
+}

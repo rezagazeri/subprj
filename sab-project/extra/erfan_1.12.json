@@ -1,0 +1,2637 @@
+{
+	"info": {
+		"_postman_id": "3eeec816-e2ce-4a1d-8177-103dec199a6b",
+		"name": "sup",
+		"schema": "https://schema.getpostman.com/json/collection/v2.1.0/collection.json"
+	},
+	"item": [
+		{
+			"name": "/v1/automated_transaction_types",
+			"request": {
+				"method": "GET",
+				"header": [],
+				"url": {
+					"raw": "{{sup_base_url}}/v1/automated_transaction_types?flagId=1",
+					"host": [
+						"{{sup_base_url}}"
+					],
+					"path": [
+						"v1",
+						"automated_transaction_types"
+					],
+					"query": [
+						{
+							"key": "flagId",
+							"value": "1"
+						}
+					]
+				}
+			},
+			"response": []
+		},
+		{
+			"name": "/v1/automated_transaction_types/:id",
+			"request": {
+				"method": "GET",
+				"header": [],
+				"url": {
+					"raw": "{{sup_base_url}}/v1/automated_transaction_types/4",
+					"host": [
+						"{{sup_base_url}}"
+					],
+					"path": [
+						"v1",
+						"automated_transaction_types",
+						"4"
+					]
+				}
+			},
+			"response": []
+		},
+		{
+			"name": "/v1/bank_account_financial_types",
+			"request": {
+				"method": "GET",
+				"header": [],
+				"url": {
+					"raw": "{{sup_base_url}}/v1/bank_account_financial_types?flagId=1",
+					"host": [
+						"{{sup_base_url}}"
+					],
+					"path": [
+						"v1",
+						"bank_account_financial_types"
+					],
+					"query": [
+						{
+							"key": "flagId",
+							"value": "1"
+						}
+					]
+				}
+			},
+			"response": []
+		},
+		{
+			"name": "/v1/bank_account_financial_types/:id",
+			"request": {
+				"method": "GET",
+				"header": [],
+				"url": {
+					"raw": "{{sup_base_url}}/v1/bank_account_financial_types/4",
+					"host": [
+						"{{sup_base_url}}"
+					],
+					"path": [
+						"v1",
+						"bank_account_financial_types",
+						"4"
+					]
+				}
+			},
+			"response": []
+		},
+		{
+			"name": "/v1/bank_account_financial_types",
+			"request": {
+				"method": "POST",
+				"header": [
+					{
+						"key": "Content-Type",
+						"name": "Content-Type",
+						"value": "application/json",
+						"type": "text"
+					}
+				],
+				"body": {
+					"mode": "raw",
+					"raw": "{\n\t\"name\": \"name\"\n}"
+				},
+				"url": {
+					"raw": "{{sup_base_url}}/v1/bank_account_financial_types",
+					"host": [
+						"{{sup_base_url}}"
+					],
+					"path": [
+						"v1",
+						"bank_account_financial_types"
+					]
+				}
+			},
+			"response": []
+		},
+		{
+			"name": "/v1/bank_account_financial_types/:id",
+			"request": {
+				"method": "PATCH",
+				"header": [
+					{
+						"key": "Content-Type",
+						"name": "Content-Type",
+						"type": "text",
+						"value": "application/json"
+					}
+				],
+				"body": {
+					"mode": "raw",
+					"raw": "{\n\t\"name\": \"changed\"\n}"
+				},
+				"url": {
+					"raw": "{{sup_base_url}}/v1/bank_account_financial_types/4",
+					"host": [
+						"{{sup_base_url}}"
+					],
+					"path": [
+						"v1",
+						"bank_account_financial_types",
+						"4"
+					]
+				}
+			},
+			"response": []
+		},
+		{
+			"name": "/v1/bank_account_financial_types/:id",
+			"request": {
+				"method": "DELETE",
+				"header": [
+					{
+						"key": "Content-Type",
+						"name": "Content-Type",
+						"type": "text",
+						"value": "application/json"
+					}
+				],
+				"body": {
+					"mode": "raw",
+					"raw": ""
+				},
+				"url": {
+					"raw": "{{sup_base_url}}/v1/bank_account_financial_types/4",
+					"host": [
+						"{{sup_base_url}}"
+					],
+					"path": [
+						"v1",
+						"bank_account_financial_types",
+						"4"
+					]
+				}
+			},
+			"response": []
+		},
+		{
+			"name": "/v1/bank_account_types",
+			"request": {
+				"method": "GET",
+				"header": [],
+				"url": {
+					"raw": "{{sup_base_url}}/v1/bank_account_types?flagId=1",
+					"host": [
+						"{{sup_base_url}}"
+					],
+					"path": [
+						"v1",
+						"bank_account_types"
+					],
+					"query": [
+						{
+							"key": "flagId",
+							"value": "1"
+						}
+					]
+				}
+			},
+			"response": []
+		},
+		{
+			"name": "/v1/bank_account_types/:id",
+			"request": {
+				"method": "GET",
+				"header": [],
+				"url": {
+					"raw": "{{sup_base_url}}/v1/bank_account_types/1",
+					"host": [
+						"{{sup_base_url}}"
+					],
+					"path": [
+						"v1",
+						"bank_account_types",
+						"1"
+					]
+				}
+			},
+			"response": []
+		},
+		{
+			"name": "/v1/bank_account_types",
+			"request": {
+				"method": "POST",
+				"header": [
+					{
+						"key": "Content-Type",
+						"name": "Content-Type",
+						"value": "application/json",
+						"type": "text"
+					}
+				],
+				"body": {
+					"mode": "raw",
+					"raw": "{\n\t\"name\": \"name\"\n}"
+				},
+				"url": {
+					"raw": "{{sup_base_url}}/v1/bank_account_types",
+					"host": [
+						"{{sup_base_url}}"
+					],
+					"path": [
+						"v1",
+						"bank_account_types"
+					]
+				}
+			},
+			"response": []
+		},
+		{
+			"name": "/v1/bank_account_types/:id",
+			"request": {
+				"method": "PATCH",
+				"header": [
+					{
+						"key": "Content-Type",
+						"name": "Content-Type",
+						"type": "text",
+						"value": "application/json"
+					}
+				],
+				"body": {
+					"mode": "raw",
+					"raw": "{\n\t\"name\": \"name\"\n}"
+				},
+				"url": {
+					"raw": "{{sup_base_url}}/v1/bank_account_types/8",
+					"host": [
+						"{{sup_base_url}}"
+					],
+					"path": [
+						"v1",
+						"bank_account_types",
+						"8"
+					]
+				}
+			},
+			"response": []
+		},
+		{
+			"name": "/v1/bank_account_types/:id",
+			"request": {
+				"method": "DELETE",
+				"header": [],
+				"body": {
+					"mode": "raw",
+					"raw": ""
+				},
+				"url": {
+					"raw": "{{sup_base_url}}/v1/bank_account_types/8",
+					"host": [
+						"{{sup_base_url}}"
+					],
+					"path": [
+						"v1",
+						"bank_account_types",
+						"8"
+					]
+				}
+			},
+			"response": []
+		},
+		{
+			"name": "/v1/bank_accounts",
+			"request": {
+				"method": "GET",
+				"header": [
+					{
+						"key": "authToken",
+						"value": "7772da89b3b81351ea88af9ab6d406af",
+						"type": "text"
+					}
+				],
+				"url": {
+					"raw": "{{sup_base_url}}/v1/bank_accounts?situationId=1&accountTypeId=HQ&order=financialType",
+					"host": [
+						"{{sup_base_url}}"
+					],
+					"path": [
+						"v1",
+						"bank_accounts"
+					],
+					"query": [
+						{
+							"key": "situationId",
+							"value": "1"
+						},
+						{
+							"key": "accountTypeId",
+							"value": "HQ"
+						},
+						{
+							"key": "order",
+							"value": "financialType"
+						}
+					]
+				}
+			},
+			"response": []
+		},
+		{
+			"name": "/v1/bank_accounts/:id",
+			"request": {
+				"method": "GET",
+				"header": [],
+				"url": {
+					"raw": "{{sup_base_url}}/v1/bank_accounts/6",
+					"host": [
+						"{{sup_base_url}}"
+					],
+					"path": [
+						"v1",
+						"bank_accounts",
+						"6"
+					]
+				}
+			},
+			"response": []
+		},
+		{
+			"name": "/v1/region_bank_accounts/:regionId",
+			"request": {
+				"method": "GET",
+				"header": [
+					{
+						"key": "authToken",
+						"type": "text",
+						"value": "7772da89b3b81351ea88af9ab6d406af"
+					}
+				],
+				"url": {
+					"raw": "{{sup_base_url}}/v1/region_bank_accounts/92",
+					"host": [
+						"{{sup_base_url}}"
+					],
+					"path": [
+						"v1",
+						"region_bank_accounts",
+						"92"
+					]
+				}
+			},
+			"response": []
+		},
+		{
+			"name": "/v1/bank_accounts",
+			"request": {
+				"method": "POST",
+				"header": [
+					{
+						"key": "Content-Type",
+						"name": "Content-Type",
+						"value": "application/json",
+						"type": "text"
+					}
+				],
+				"body": {
+					"mode": "raw",
+					"raw": "{\n\t\"accountNumber\": \"1650048768\",\n\t\"bankId\": 1,\n\t\"ownerName\": \"حسین عرفانی\",\n\t\"hasChequePermission\": true,\n\t\"financialTypeId\": 1,\n\t\"accountTypeId\": \"HQ\",\n\t\"headquarterConfirmation\": true,\n\t\"bankConfirmation\": true\n}"
+				},
+				"url": {
+					"raw": "{{sup_base_url}}/v1/bank_accounts",
+					"host": [
+						"{{sup_base_url}}"
+					],
+					"path": [
+						"v1",
+						"bank_accounts"
+					]
+				}
+			},
+			"response": []
+		},
+		{
+			"name": "/v1/bank_accounts/:id",
+			"request": {
+				"method": "PATCH",
+				"header": [
+					{
+						"key": "Content-Type",
+						"name": "Content-Type",
+						"value": "application/json",
+						"type": "text"
+					}
+				],
+				"body": {
+					"mode": "raw",
+					"raw": "{\n\t\"accountNumber\": \"165004876ddd8\",\n\t\"bankId\": 1,\n\t\"ownerName\": \"سامان اقبالی\",\n\t\"hasChequePermission\": true,\n\t\"financialTypeId\": 1,\n\t\"accountTypeId\": 2,\n\t\"headquarterConfirmation\": true,\n\t\"bankConfirmation\": true\n}"
+				},
+				"url": {
+					"raw": "{{sup_base_url}}/v1/bank_accounts/10",
+					"host": [
+						"{{sup_base_url}}"
+					],
+					"path": [
+						"v1",
+						"bank_accounts",
+						"10"
+					]
+				}
+			},
+			"response": []
+		},
+		{
+			"name": "/v1/bank_accounts/:id",
+			"request": {
+				"method": "DELETE",
+				"header": [],
+				"body": {
+					"mode": "raw",
+					"raw": ""
+				},
+				"url": {
+					"raw": "{{sup_base_url}}/v1/bank_accounts/99",
+					"host": [
+						"{{sup_base_url}}"
+					],
+					"path": [
+						"v1",
+						"bank_accounts",
+						"99"
+					]
+				}
+			},
+			"response": []
+		},
+		{
+			"name": "/v1/banks",
+			"request": {
+				"method": "GET",
+				"header": [
+					{
+						"key": "authToken",
+						"value": "7772da89b3b81351ea88af9ab6d406af",
+						"type": "text"
+					}
+				],
+				"url": {
+					"raw": "{{sup_base_url}}/v1/banks?flagId=1",
+					"host": [
+						"{{sup_base_url}}"
+					],
+					"path": [
+						"v1",
+						"banks"
+					],
+					"query": [
+						{
+							"key": "flagId",
+							"value": "1"
+						}
+					]
+				}
+			},
+			"response": []
+		},
+		{
+			"name": "/v1/banks/:id",
+			"request": {
+				"method": "GET",
+				"header": [],
+				"url": {
+					"raw": "{{sup_base_url}}/v1/banks/1",
+					"host": [
+						"{{sup_base_url}}"
+					],
+					"path": [
+						"v1",
+						"banks",
+						"1"
+					]
+				}
+			},
+			"response": []
+		},
+		{
+			"name": "/v1/banks",
+			"request": {
+				"method": "POST",
+				"header": [
+					{
+						"key": "Content-Type",
+						"name": "Content-Type",
+						"value": "application/json",
+						"type": "text"
+					}
+				],
+				"body": {
+					"mode": "raw",
+					"raw": "{\n\t\"name\": \"name\"\n}"
+				},
+				"url": {
+					"raw": "{{sup_base_url}}/v1/banks",
+					"host": [
+						"{{sup_base_url}}"
+					],
+					"path": [
+						"v1",
+						"banks"
+					]
+				}
+			},
+			"response": []
+		},
+		{
+			"name": "/v1/banks/:id",
+			"request": {
+				"method": "PATCH",
+				"header": [
+					{
+						"key": "Content-Type",
+						"name": "Content-Type",
+						"value": "application/json",
+						"type": "text"
+					}
+				],
+				"body": {
+					"mode": "raw",
+					"raw": "{\n\t\"name\": \"changed\"\n}"
+				},
+				"url": {
+					"raw": "{{sup_base_url}}/v1/banks/4",
+					"host": [
+						"{{sup_base_url}}"
+					],
+					"path": [
+						"v1",
+						"banks",
+						"4"
+					]
+				}
+			},
+			"response": []
+		},
+		{
+			"name": "/v1/banks/:id",
+			"request": {
+				"method": "DELETE",
+				"header": [
+					{
+						"key": "Content-Type",
+						"name": "Content-Type",
+						"value": "application/json",
+						"type": "text"
+					}
+				],
+				"body": {
+					"mode": "raw",
+					"raw": ""
+				},
+				"url": {
+					"raw": "{{sup_base_url}}/v1/banks/66",
+					"host": [
+						"{{sup_base_url}}"
+					],
+					"path": [
+						"v1",
+						"banks",
+						"66"
+					]
+				}
+			},
+			"response": []
+		},
+		{
+			"name": "/v1/cities",
+			"request": {
+				"method": "GET",
+				"header": [],
+				"url": {
+					"raw": "{{sup_base_url}}/v1/cities?flagId=1",
+					"host": [
+						"{{sup_base_url}}"
+					],
+					"path": [
+						"v1",
+						"cities"
+					],
+					"query": [
+						{
+							"key": "flagId",
+							"value": "1"
+						}
+					]
+				}
+			},
+			"response": []
+		},
+		{
+			"name": "/v1/cities/:id",
+			"request": {
+				"method": "GET",
+				"header": [],
+				"url": {
+					"raw": "{{sup_base_url}}/v1/cities/1",
+					"host": [
+						"{{sup_base_url}}"
+					],
+					"path": [
+						"v1",
+						"cities",
+						"1"
+					]
+				}
+			},
+			"response": []
+		},
+		{
+			"name": "/v1/cities",
+			"request": {
+				"method": "POST",
+				"header": [
+					{
+						"key": "Content-Type",
+						"name": "Content-Type",
+						"value": "application/json",
+						"type": "text"
+					}
+				],
+				"body": {
+					"mode": "raw",
+					"raw": "{\n\t\"name\": \"name\"\n}"
+				},
+				"url": {
+					"raw": "{{sup_base_url}}/v1/cities",
+					"host": [
+						"{{sup_base_url}}"
+					],
+					"path": [
+						"v1",
+						"cities"
+					]
+				}
+			},
+			"response": []
+		},
+		{
+			"name": "/v1/cities/:id",
+			"request": {
+				"method": "PATCH",
+				"header": [
+					{
+						"key": "Content-Type",
+						"name": "Content-Type",
+						"value": "application/json",
+						"type": "text"
+					}
+				],
+				"body": {
+					"mode": "raw",
+					"raw": "{\n\t\"name\": \"changed\"\n}"
+				},
+				"url": {
+					"raw": "{{sup_base_url}}/v1/cities/1134",
+					"host": [
+						"{{sup_base_url}}"
+					],
+					"path": [
+						"v1",
+						"cities",
+						"1134"
+					]
+				}
+			},
+			"response": []
+		},
+		{
+			"name": "/v1/cities/:id",
+			"request": {
+				"method": "DELETE",
+				"header": [
+					{
+						"key": "Content-Type",
+						"name": "Content-Type",
+						"type": "text",
+						"value": "application/json"
+					}
+				],
+				"body": {
+					"mode": "raw",
+					"raw": ""
+				},
+				"url": {
+					"raw": "{{sup_base_url}}/v1/cities/1134",
+					"host": [
+						"{{sup_base_url}}"
+					],
+					"path": [
+						"v1",
+						"cities",
+						"1134"
+					]
+				}
+			},
+			"response": []
+		},
+		{
+			"name": "/v1/contractors",
+			"request": {
+				"method": "GET",
+				"header": [],
+				"url": {
+					"raw": "{{sup_base_url}}/v1/contractors?flagId=1",
+					"host": [
+						"{{sup_base_url}}"
+					],
+					"path": [
+						"v1",
+						"contractors"
+					],
+					"query": [
+						{
+							"key": "flagId",
+							"value": "1"
+						}
+					]
+				}
+			},
+			"response": []
+		},
+		{
+			"name": "/v1/contractors/:id",
+			"request": {
+				"method": "GET",
+				"header": [],
+				"url": {
+					"raw": "{{sup_base_url}}/v1/contractors/7",
+					"host": [
+						"{{sup_base_url}}"
+					],
+					"path": [
+						"v1",
+						"contractors",
+						"7"
+					]
+				}
+			},
+			"response": []
+		},
+		{
+			"name": "/v1/contractors",
+			"request": {
+				"method": "POST",
+				"header": [
+					{
+						"key": "Content-Type",
+						"name": "Content-Type",
+						"value": "application/json",
+						"type": "text"
+					}
+				],
+				"body": {
+					"mode": "raw",
+					"raw": "{\n\t\"id\": 7,\n\t\"name\": \"Contractor\",\n\t\"oilChartStructureId\": 1,\n\t\"bankAccountIds\": [ 1, 2, 6 ]\n}",
+					"options": {
+						"raw": {
+							"language": "json"
+						}
+					}
+				},
+				"url": {
+					"raw": "{{sup_base_url}}/v1/contractors",
+					"host": [
+						"{{sup_base_url}}"
+					],
+					"path": [
+						"v1",
+						"contractors"
+					]
+				}
+			},
+			"response": []
+		},
+		{
+			"name": "/v1/contractors/:id",
+			"request": {
+				"method": "PATCH",
+				"header": [
+					{
+						"key": "Content-Type",
+						"name": "Content-Type",
+						"value": "application/json",
+						"type": "text"
+					}
+				],
+				"body": {
+					"mode": "raw",
+					"raw": "{\n\t\"name\": \"Contractor\",\n\t\"oilChartStructureId\": 1,\n\t\"bankAccountIds\": [ 1, 2, 6, 7 ]\n}",
+					"options": {
+						"raw": {
+							"language": "json"
+						}
+					}
+				},
+				"url": {
+					"raw": "{{sup_base_url}}/v1/contractors/6",
+					"host": [
+						"{{sup_base_url}}"
+					],
+					"path": [
+						"v1",
+						"contractors",
+						"6"
+					]
+				}
+			},
+			"response": []
+		},
+		{
+			"name": "/v1/contractors/:id",
+			"request": {
+				"method": "DELETE",
+				"header": [],
+				"url": {
+					"raw": "{{sup_base_url}}/v1/contractors/6",
+					"host": [
+						"{{sup_base_url}}"
+					],
+					"path": [
+						"v1",
+						"contractors",
+						"6"
+					]
+				}
+			},
+			"response": []
+		},
+		{
+			"name": "/v1/countries",
+			"request": {
+				"method": "GET",
+				"header": [],
+				"url": {
+					"raw": "{{sup_base_url}}/v1/countries?flagId=1",
+					"host": [
+						"{{sup_base_url}}"
+					],
+					"path": [
+						"v1",
+						"countries"
+					],
+					"query": [
+						{
+							"key": "flagId",
+							"value": "1"
+						}
+					]
+				}
+			},
+			"response": []
+		},
+		{
+			"name": "/v1/countries/:id",
+			"request": {
+				"method": "GET",
+				"header": [],
+				"url": {
+					"raw": "{{sup_base_url}}/v1/countries/1",
+					"host": [
+						"{{sup_base_url}}"
+					],
+					"path": [
+						"v1",
+						"countries",
+						"1"
+					]
+				}
+			},
+			"response": []
+		},
+		{
+			"name": "/v1/customer_groups",
+			"request": {
+				"method": "GET",
+				"header": [],
+				"url": {
+					"raw": "{{sup_base_url}}/v1/customer_groups?flagId=1",
+					"host": [
+						"{{sup_base_url}}"
+					],
+					"path": [
+						"v1",
+						"customer_groups"
+					],
+					"query": [
+						{
+							"key": "flagId",
+							"value": "1"
+						}
+					]
+				}
+			},
+			"response": []
+		},
+		{
+			"name": "/v1/customer_groups/:id",
+			"request": {
+				"method": "GET",
+				"header": [],
+				"url": {
+					"raw": "{{sup_base_url}}/v1/customer_groups/1",
+					"host": [
+						"{{sup_base_url}}"
+					],
+					"path": [
+						"v1",
+						"customer_groups",
+						"1"
+					]
+				}
+			},
+			"response": []
+		},
+		{
+			"name": "/v1/customer_groups",
+			"request": {
+				"method": "POST",
+				"header": [
+					{
+						"key": "Content-Type",
+						"name": "Content-Type",
+						"value": "application/json",
+						"type": "text"
+					}
+				],
+				"body": {
+					"mode": "raw",
+					"raw": "{\n\t\"name\": \"name\"\n}"
+				},
+				"url": {
+					"raw": "{{sup_base_url}}/v1/customer_groups",
+					"host": [
+						"{{sup_base_url}}"
+					],
+					"path": [
+						"v1",
+						"customer_groups"
+					]
+				}
+			},
+			"response": []
+		},
+		{
+			"name": "/v1/customer_groups/:id",
+			"request": {
+				"method": "PATCH",
+				"header": [
+					{
+						"key": "Content-Type",
+						"name": "Content-Type",
+						"type": "text",
+						"value": "application/json"
+					}
+				],
+				"body": {
+					"mode": "raw",
+					"raw": "{\n\t\"name\": \"changed\"\n}"
+				},
+				"url": {
+					"raw": "{{sup_base_url}}/v1/customer_groups/4",
+					"host": [
+						"{{sup_base_url}}"
+					],
+					"path": [
+						"v1",
+						"customer_groups",
+						"4"
+					]
+				}
+			},
+			"response": []
+		},
+		{
+			"name": "/v1/customer_groups/:id",
+			"request": {
+				"method": "DELETE",
+				"header": [],
+				"body": {
+					"mode": "raw",
+					"raw": ""
+				},
+				"url": {
+					"raw": "{{sup_base_url}}/v1/customer_groups/4",
+					"host": [
+						"{{sup_base_url}}"
+					],
+					"path": [
+						"v1",
+						"customer_groups",
+						"4"
+					]
+				}
+			},
+			"response": []
+		},
+		{
+			"name": "/v1/customer_supply_channels",
+			"request": {
+				"method": "GET",
+				"header": [],
+				"url": {
+					"raw": "{{sup_base_url}}/v1/customer_supply_channels?flagId=1",
+					"host": [
+						"{{sup_base_url}}"
+					],
+					"path": [
+						"v1",
+						"customer_supply_channels"
+					],
+					"query": [
+						{
+							"key": "flagId",
+							"value": "1"
+						}
+					]
+				}
+			},
+			"response": []
+		},
+		{
+			"name": "/v1/customer_supply_channels/:id",
+			"request": {
+				"method": "GET",
+				"header": [],
+				"url": {
+					"raw": "{{sup_base_url}}/v1/customer_supply_channels/1",
+					"host": [
+						"{{sup_base_url}}"
+					],
+					"path": [
+						"v1",
+						"customer_supply_channels",
+						"1"
+					]
+				}
+			},
+			"response": []
+		},
+		{
+			"name": "/v1/customer_supply_channels",
+			"request": {
+				"method": "POST",
+				"header": [
+					{
+						"key": "Content-Type",
+						"name": "Content-Type",
+						"value": "application/json",
+						"type": "text"
+					}
+				],
+				"body": {
+					"mode": "raw",
+					"raw": "{\n\t\"name\": \"name\"\n}"
+				},
+				"url": {
+					"raw": "{{sup_base_url}}/v1/customer_supply_channels",
+					"host": [
+						"{{sup_base_url}}"
+					],
+					"path": [
+						"v1",
+						"customer_supply_channels"
+					]
+				}
+			},
+			"response": []
+		},
+		{
+			"name": "/v1/customer_supply_channels/:id",
+			"request": {
+				"method": "PATCH",
+				"header": [
+					{
+						"key": "Content-Type",
+						"name": "Content-Type",
+						"value": "application/json",
+						"type": "text"
+					}
+				],
+				"body": {
+					"mode": "raw",
+					"raw": "{\n\t\"name\": \"changed\"\n}"
+				},
+				"url": {
+					"raw": "{{sup_base_url}}/v1/customer_supply_channels/4",
+					"host": [
+						"{{sup_base_url}}"
+					],
+					"path": [
+						"v1",
+						"customer_supply_channels",
+						"4"
+					]
+				}
+			},
+			"response": []
+		},
+		{
+			"name": "/v1/customer_supply_channels/:id",
+			"request": {
+				"method": "DELETE",
+				"header": [
+					{
+						"key": "Content-Type",
+						"name": "Content-Type",
+						"type": "text",
+						"value": "application/json"
+					}
+				],
+				"body": {
+					"mode": "raw",
+					"raw": ""
+				},
+				"url": {
+					"raw": "{{sup_base_url}}/v1/customer_supply_channels/4",
+					"host": [
+						"{{sup_base_url}}"
+					],
+					"path": [
+						"v1",
+						"customer_supply_channels",
+						"4"
+					]
+				}
+			},
+			"response": []
+		},
+		{
+			"name": "/v1/customer_types",
+			"request": {
+				"method": "GET",
+				"header": [],
+				"url": {
+					"raw": "{{sup_base_url}}/v1/customer_types?flagId=1",
+					"host": [
+						"{{sup_base_url}}"
+					],
+					"path": [
+						"v1",
+						"customer_types"
+					],
+					"query": [
+						{
+							"key": "flagId",
+							"value": "1"
+						}
+					]
+				}
+			},
+			"response": []
+		},
+		{
+			"name": "/v1/customer_types/:id",
+			"request": {
+				"method": "GET",
+				"header": [],
+				"url": {
+					"raw": "{{sup_base_url}}/v1/customer_types/1",
+					"host": [
+						"{{sup_base_url}}"
+					],
+					"path": [
+						"v1",
+						"customer_types",
+						"1"
+					]
+				}
+			},
+			"response": []
+		},
+		{
+			"name": "/v1/customer_types",
+			"request": {
+				"method": "POST",
+				"header": [
+					{
+						"key": "Content-Type",
+						"name": "Content-Type",
+						"value": "application/json",
+						"type": "text"
+					}
+				],
+				"body": {
+					"mode": "raw",
+					"raw": "{\n\t\"name\": \"name\"\n}"
+				},
+				"url": {
+					"raw": "{{sup_base_url}}/v1/customer_types",
+					"host": [
+						"{{sup_base_url}}"
+					],
+					"path": [
+						"v1",
+						"customer_types"
+					]
+				}
+			},
+			"response": []
+		},
+		{
+			"name": "/v1/customer_types/:id",
+			"request": {
+				"method": "PATCH",
+				"header": [
+					{
+						"key": "Content-Type",
+						"name": "Content-Type",
+						"value": "application/json",
+						"type": "text"
+					}
+				],
+				"body": {
+					"mode": "raw",
+					"raw": "{\n\t\"name\": \"changed\"\n}"
+				},
+				"url": {
+					"raw": "{{sup_base_url}}/v1/customer_types/90",
+					"host": [
+						"{{sup_base_url}}"
+					],
+					"path": [
+						"v1",
+						"customer_types",
+						"90"
+					]
+				}
+			},
+			"response": []
+		},
+		{
+			"name": "/v1/customer_types/:id",
+			"request": {
+				"method": "DELETE",
+				"header": [
+					{
+						"key": "Content-Type",
+						"name": "Content-Type",
+						"value": "application/json",
+						"type": "text"
+					}
+				],
+				"body": {
+					"mode": "raw",
+					"raw": ""
+				},
+				"url": {
+					"raw": "{{sup_base_url}}/v1/customer_types/90",
+					"host": [
+						"{{sup_base_url}}"
+					],
+					"path": [
+						"v1",
+						"customer_types",
+						"90"
+					]
+				}
+			},
+			"response": []
+		},
+		{
+			"name": "/v1/customer_usage_types",
+			"request": {
+				"method": "GET",
+				"header": [],
+				"url": {
+					"raw": "{{sup_base_url}}/v1/customer_usage_types?flagId=1",
+					"host": [
+						"{{sup_base_url}}"
+					],
+					"path": [
+						"v1",
+						"customer_usage_types"
+					],
+					"query": [
+						{
+							"key": "flagId",
+							"value": "1"
+						}
+					]
+				}
+			},
+			"response": []
+		},
+		{
+			"name": "/v1/customer_usage_types/:id",
+			"request": {
+				"method": "GET",
+				"header": [],
+				"url": {
+					"raw": "{{sup_base_url}}/v1/customer_usage_types/1",
+					"host": [
+						"{{sup_base_url}}"
+					],
+					"path": [
+						"v1",
+						"customer_usage_types",
+						"1"
+					]
+				}
+			},
+			"response": []
+		},
+		{
+			"name": "/v1/customer_usage_types",
+			"request": {
+				"method": "POST",
+				"header": [
+					{
+						"key": "Content-Type",
+						"name": "Content-Type",
+						"value": "application/json",
+						"type": "text"
+					}
+				],
+				"body": {
+					"mode": "raw",
+					"raw": "{\n\t\"name\": \"name\"\n}"
+				},
+				"url": {
+					"raw": "{{sup_base_url}}/v1/customer_usage_types",
+					"host": [
+						"{{sup_base_url}}"
+					],
+					"path": [
+						"v1",
+						"customer_usage_types"
+					]
+				}
+			},
+			"response": []
+		},
+		{
+			"name": "/v1/customer_usage_types/:id",
+			"request": {
+				"method": "PATCH",
+				"header": [
+					{
+						"key": "Content-Type",
+						"name": "Content-Type",
+						"value": "application/json",
+						"type": "text"
+					}
+				],
+				"body": {
+					"mode": "raw",
+					"raw": "{\n\t\"name\": \"changed\"\n}"
+				},
+				"url": {
+					"raw": "{{sup_base_url}}/v1/customer_usage_types/10",
+					"host": [
+						"{{sup_base_url}}"
+					],
+					"path": [
+						"v1",
+						"customer_usage_types",
+						"10"
+					]
+				}
+			},
+			"response": []
+		},
+		{
+			"name": "/v1/customer_usage_types/:id Copy",
+			"request": {
+				"method": "DELETE",
+				"header": [
+					{
+						"key": "Content-Type",
+						"name": "Content-Type",
+						"value": "application/json",
+						"type": "text"
+					}
+				],
+				"body": {
+					"mode": "raw",
+					"raw": ""
+				},
+				"url": {
+					"raw": "{{sup_base_url}}/v1/customer_usage_types/10",
+					"host": [
+						"{{sup_base_url}}"
+					],
+					"path": [
+						"v1",
+						"customer_usage_types",
+						"10"
+					]
+				}
+			},
+			"response": []
+		},
+		{
+			"name": "/v1/customers",
+			"request": {
+				"method": "GET",
+				"header": [],
+				"url": {
+					"raw": "{{sup_base_url}}/v1/customers?",
+					"host": [
+						"{{sup_base_url}}"
+					],
+					"path": [
+						"v1",
+						"customers"
+					],
+					"query": [
+						{
+							"key": "customerTypeId",
+							"value": "8",
+							"disabled": true
+						},
+						{
+							"key": "usageTypeId",
+							"value": "1",
+							"disabled": true
+						},
+						{
+							"key": "depositId",
+							"value": "1",
+							"disabled": true
+						},
+						{
+							"key": "oilChartStructureId",
+							"value": "1",
+							"disabled": true
+						},
+						{
+							"key": "customerName",
+							"value": "Changed",
+							"disabled": true
+						}
+					]
+				}
+			},
+			"response": []
+		},
+		{
+			"name": "/v1/customers/:id",
+			"request": {
+				"method": "GET",
+				"header": [],
+				"url": {
+					"raw": "{{sup_base_url}}/v1/customers/52",
+					"host": [
+						"{{sup_base_url}}"
+					],
+					"path": [
+						"v1",
+						"customers",
+						"52"
+					]
+				}
+			},
+			"response": []
+		},
+		{
+			"name": "/v1/customers",
+			"request": {
+				"method": "POST",
+				"header": [
+					{
+						"key": "Content-Type",
+						"name": "Content-Type",
+						"value": "application/json",
+						"type": "text"
+					}
+				],
+				"body": {
+					"mode": "raw",
+					"raw": "{\n\t\"oilChartStructureId\": 1,\n\t\"customerName\": \"حسین عرفانی\",\n\t\"customerTypeId\": 8,\n\t\"depositId\": 1,\n\t\"usageTypeId\": 1,\n\t\"supplyChannelId\": 1,\n\t\"groupId\": 1,\n\t\"flagId\": 1,\n\t\"extraInfo\": {\n\t\t\"financialCode\": \"1\",\n\t\t\"salesCode\": \"1\",\n\t\t\"phone\": \"09127479010\",\n\t\t\"address\": \"Iran, Tehran\",\n\t\t\"accountNumber\": \"Account number\",\n\t\t\"shoppingCode\": \"1\",\n\t\t\"stationCode\": \"1\"\n\t},\n\t\"concessionaire\": {\n\t\t\"name\": \"حسین عرفانی\",\n\t\t\"phone\": \"09127479010\",\n\t\t\"nationalCode\": \"0380000000\"\n\t},\n\t\"bankAccountIds\": [ 1 ],\n\t\"contractorBankAccountId\": 7\n}\n",
+					"options": {
+						"raw": {
+							"language": "json"
+						}
+					}
+				},
+				"url": {
+					"raw": "{{sup_base_url}}/v1/customers",
+					"host": [
+						"{{sup_base_url}}"
+					],
+					"path": [
+						"v1",
+						"customers"
+					]
+				}
+			},
+			"response": []
+		},
+		{
+			"name": "/v1/customers/:id",
+			"request": {
+				"method": "PATCH",
+				"header": [
+					{
+						"key": "Content-Type",
+						"name": "Content-Type",
+						"value": "application/json",
+						"type": "text"
+					}
+				],
+				"body": {
+					"mode": "raw",
+					"raw": "{\n\t\"oilChartStructureId\": 1,\n\t\"customerName\": \"Changed\",\n\t\"customerTypeId\": 8,\n\t\"depositId\": 1,\n\t\"usageTypeId\": 1,\n\t\"supplyChannelId\": 1,\n\t\"groupId\": 1,\n\t\"flagId\": 1,\n\t\"extraInfo\": {\n\t\t\"financialCode\": \"1\",\n\t\t\"salesCode\": \"1\",\n\t\t\"phone\": \"09127479010\",\n\t\t\"address\": \"Changed\",\n\t\t\"accountNumber\": \"Account number\",\n\t\t\"shoppingCode\": \"1\",\n\t\t\"stationCode\": \"1\"\n\t},\n\t\"concessionaire\": {\n\t\t\"name\": \"حسین عرفانی\",\n\t\t\"phone\": \"0912747901011\",\n\t\t\"nationalCode\": \"0380000000\"\n\t},\n\t\"bankAccountIds\": [ 1, 3 ],\n\t\"contractorBankAccountId\": 3\n}\n",
+					"options": {
+						"raw": {
+							"language": "json"
+						}
+					}
+				},
+				"url": {
+					"raw": "{{sup_base_url}}/v1/customers/53",
+					"host": [
+						"{{sup_base_url}}"
+					],
+					"path": [
+						"v1",
+						"customers",
+						"53"
+					]
+				}
+			},
+			"response": []
+		},
+		{
+			"name": "/v1/customers/:id",
+			"request": {
+				"method": "DELETE",
+				"header": [],
+				"url": {
+					"raw": "{{sup_base_url}}/v1/customers/1",
+					"host": [
+						"{{sup_base_url}}"
+					],
+					"path": [
+						"v1",
+						"customers",
+						"1"
+					]
+				}
+			},
+			"response": []
+		},
+		{
+			"name": "/v1/flags",
+			"request": {
+				"method": "GET",
+				"header": [],
+				"url": {
+					"raw": "{{sup_base_url}}/v1/flags",
+					"host": [
+						"{{sup_base_url}}"
+					],
+					"path": [
+						"v1",
+						"flags"
+					]
+				}
+			},
+			"response": []
+		},
+		{
+			"name": "/v1/flags/:id",
+			"request": {
+				"method": "GET",
+				"header": [],
+				"url": {
+					"raw": "{{sup_base_url}}/v1/flags/1",
+					"host": [
+						"{{sup_base_url}}"
+					],
+					"path": [
+						"v1",
+						"flags",
+						"1"
+					]
+				}
+			},
+			"response": []
+		},
+		{
+			"name": "/v1/menu_permitted_actions",
+			"request": {
+				"method": "GET",
+				"header": [],
+				"url": {
+					"raw": "{{sup_base_url}}/v1/menu_permitted_actions?flagId=1",
+					"host": [
+						"{{sup_base_url}}"
+					],
+					"path": [
+						"v1",
+						"menu_permitted_actions"
+					],
+					"query": [
+						{
+							"key": "flagId",
+							"value": "1"
+						}
+					]
+				}
+			},
+			"response": []
+		},
+		{
+			"name": "/v1/menu_permitted_actions/:id",
+			"request": {
+				"method": "GET",
+				"header": [],
+				"url": {
+					"raw": "{{sup_base_url}}/v1/menu_permitted_actions/1",
+					"host": [
+						"{{sup_base_url}}"
+					],
+					"path": [
+						"v1",
+						"menu_permitted_actions",
+						"1"
+					]
+				}
+			},
+			"response": []
+		},
+		{
+			"name": "/v1/headquarters",
+			"request": {
+				"method": "GET",
+				"header": [],
+				"url": {
+					"raw": "{{sup_base_url}}/v1/headquarters",
+					"host": [
+						"{{sup_base_url}}"
+					],
+					"path": [
+						"v1",
+						"headquarters"
+					]
+				}
+			},
+			"response": []
+		},
+		{
+			"name": "/v1/headquarters/:id",
+			"request": {
+				"method": "GET",
+				"header": [],
+				"url": {
+					"raw": "{{sup_base_url}}/v1/headquarters/80",
+					"host": [
+						"{{sup_base_url}}"
+					],
+					"path": [
+						"v1",
+						"headquarters",
+						"80"
+					]
+				}
+			},
+			"response": []
+		},
+		{
+			"name": "/v1/headquarters",
+			"request": {
+				"method": "POST",
+				"header": [
+					{
+						"key": "Content-Type",
+						"name": "Content-Type",
+						"value": "application/json",
+						"type": "text"
+					}
+				],
+				"body": {
+					"mode": "raw",
+					"raw": "{\n\t\"name\": \"MainHeadquarter\",\n\t\"email\": \"h_erf@icloud.com\",\n\t\"financialCode\": \"fc\",\n\t\"slaseCode\": \"sc\",\n\t\"depositId\": \"di\",\n\t\"flagId\": 1,\n\t\"publicDepositId\": \"pdi\",\n\t\"bankAccounts\": [ 1, 2 ]\n}"
+				},
+				"url": {
+					"raw": "{{sup_base_url}}/v1/headquarters",
+					"host": [
+						"{{sup_base_url}}"
+					],
+					"path": [
+						"v1",
+						"headquarters"
+					]
+				}
+			},
+			"response": []
+		},
+		{
+			"name": "/v1/headquarters/:id",
+			"request": {
+				"method": "PATCH",
+				"header": [
+					{
+						"key": "Content-Type",
+						"name": "Content-Type",
+						"type": "text",
+						"value": "application/json"
+					}
+				],
+				"body": {
+					"mode": "raw",
+					"raw": "{\n\t\"name\": \"Changed\",\n\t\"email\": \"h_erf@icloud.com\",\n\t\"financialCode\": \"fc\",\n\t\"slaseCode\": \"sc\",\n\t\"depositId\": \"di\",\n\t\"publicDepositId\": \"pdi\",\n\t\"bankAccounts\": []\n}"
+				},
+				"url": {
+					"raw": "{{sup_base_url}}/v1/headquarters/80",
+					"host": [
+						"{{sup_base_url}}"
+					],
+					"path": [
+						"v1",
+						"headquarters",
+						"80"
+					]
+				}
+			},
+			"response": []
+		},
+		{
+			"name": "/v1/headquarters/:id",
+			"request": {
+				"method": "DELETE",
+				"header": [
+					{
+						"key": "Content-Type",
+						"name": "Content-Type",
+						"value": "application/json",
+						"type": "text"
+					}
+				],
+				"body": {
+					"mode": "raw",
+					"raw": ""
+				},
+				"url": {
+					"raw": "{{sup_base_url}}/v1/headquarters/15",
+					"host": [
+						"{{sup_base_url}}"
+					],
+					"path": [
+						"v1",
+						"headquarters",
+						"15"
+					]
+				}
+			},
+			"response": []
+		},
+		{
+			"name": "/v1/regions",
+			"request": {
+				"method": "GET",
+				"header": [],
+				"url": {
+					"raw": "{{sup_base_url}}/v1/regions?flagId=1",
+					"host": [
+						"{{sup_base_url}}"
+					],
+					"path": [
+						"v1",
+						"regions"
+					],
+					"query": [
+						{
+							"key": "flagId",
+							"value": "1"
+						},
+						{
+							"key": "name",
+							"value": "",
+							"disabled": true
+						}
+					]
+				}
+			},
+			"response": []
+		},
+		{
+			"name": "/v1/regions/:id",
+			"request": {
+				"method": "GET",
+				"header": [],
+				"url": {
+					"raw": "{{sup_base_url}}/v1/regions/83",
+					"host": [
+						"{{sup_base_url}}"
+					],
+					"path": [
+						"v1",
+						"regions",
+						"83"
+					]
+				}
+			},
+			"response": []
+		},
+		{
+			"name": "/v1/regions",
+			"request": {
+				"method": "POST",
+				"header": [
+					{
+						"key": "Content-Type",
+						"name": "Content-Type",
+						"type": "text",
+						"value": "application/json"
+					}
+				],
+				"body": {
+					"mode": "raw",
+					"raw": "{\n\t\"id\": \"\",\n\t\"name\": \"Region\",\n\t\"email\": \"h_erf@icloud.com\",\n\t\"financialCode\": \"fc\",\n\t\"salseCode\": \"sc\",\n\t\"depositId\": \"di\",\n\t\"publicDepositId\": \"pdi\",\n\t\"parentId\": 1,\n\t\"flagId\": 1,\n\t\"bankAccounts\": [ 4 ]\n}"
+				},
+				"url": {
+					"raw": "{{sup_base_url}}/v1/regions",
+					"host": [
+						"{{sup_base_url}}"
+					],
+					"path": [
+						"v1",
+						"regions"
+					]
+				}
+			},
+			"response": []
+		},
+		{
+			"name": "/v1/regions/:id",
+			"request": {
+				"method": "PATCH",
+				"header": [
+					{
+						"key": "Content-Type",
+						"name": "Content-Type",
+						"type": "text",
+						"value": "application/json"
+					}
+				],
+				"body": {
+					"mode": "raw",
+					"raw": "{\n\t\"name\": \"Changed\",\n\t\"email\": \"h_erf@icloud.com\",\n\t\"financialCode\": \"fc\",\n\t\"slaseCode\": \"sc\",\n\t\"depositId\": \"di\",\n\t\"publicDepositId\": \"pdi\",\n\t\"parentId\": 10,\n\t\"bankAccounts\": []\n}"
+				},
+				"url": {
+					"raw": "{{sup_base_url}}/v1/regions/83",
+					"host": [
+						"{{sup_base_url}}"
+					],
+					"path": [
+						"v1",
+						"regions",
+						"83"
+					]
+				}
+			},
+			"response": []
+		},
+		{
+			"name": "/v1/regions/:id",
+			"request": {
+				"method": "DELETE",
+				"header": [
+					{
+						"key": "Content-Type",
+						"name": "Content-Type",
+						"type": "text",
+						"value": "application/json"
+					}
+				],
+				"body": {
+					"mode": "raw",
+					"raw": ""
+				},
+				"url": {
+					"raw": "{{sup_base_url}}/v1/regions/72",
+					"host": [
+						"{{sup_base_url}}"
+					],
+					"path": [
+						"v1",
+						"regions",
+						"72"
+					]
+				}
+			},
+			"response": []
+		},
+		{
+			"name": "/v1/areas",
+			"request": {
+				"method": "GET",
+				"header": [],
+				"url": {
+					"raw": "{{sup_base_url}}/v1/areas?flagId=1",
+					"host": [
+						"{{sup_base_url}}"
+					],
+					"path": [
+						"v1",
+						"areas"
+					],
+					"query": [
+						{
+							"key": "flagId",
+							"value": "1"
+						}
+					]
+				}
+			},
+			"response": []
+		},
+		{
+			"name": "/v1/areas/:id",
+			"request": {
+				"method": "GET",
+				"header": [],
+				"url": {
+					"raw": "{{sup_base_url}}/v1/areas/84",
+					"host": [
+						"{{sup_base_url}}"
+					],
+					"path": [
+						"v1",
+						"areas",
+						"84"
+					]
+				}
+			},
+			"response": []
+		},
+		{
+			"name": "/v1/areas",
+			"request": {
+				"method": "POST",
+				"header": [
+					{
+						"key": "Content-Type",
+						"name": "Content-Type",
+						"type": "text",
+						"value": "application/json"
+					}
+				],
+				"body": {
+					"mode": "raw",
+					"raw": "{\n\t\"name\": \"Area\",\n\t\"email\": \"h_erf@icloud.com\",\n\t\"financialCode\": \"fc\",\n\t\"slaseCode\": \"sc\",\n\t\"depositId\": \"di\",\n\t\"publicDepositId\": \"pdi\",\n\t\"parentId\": 92,\n\t\"bankAccounts\": [ 10 ]\n}"
+				},
+				"url": {
+					"raw": "{{sup_base_url}}/v1/areas",
+					"host": [
+						"{{sup_base_url}}"
+					],
+					"path": [
+						"v1",
+						"areas"
+					]
+				}
+			},
+			"response": []
+		},
+		{
+			"name": "/v1/areas/:id",
+			"request": {
+				"method": "PATCH",
+				"header": [
+					{
+						"key": "Content-Type",
+						"name": "Content-Type",
+						"type": "text",
+						"value": "application/json"
+					}
+				],
+				"body": {
+					"mode": "raw",
+					"raw": "{\n\t\"name\": \"Changed3\",\n\t\"email\": \"email\",\n\t\"financialCode\": \"2345\",\n\t\"salesCode\": \"111\",\n\t\"depositId\": 55,\n\t\"publicDepositId\": 5345,\n\t\"parentId\": 11,\n\t\"level\": 1,\n\t\"bankAccounts\": [ 1, 6, 7 ]\n}"
+				},
+				"url": {
+					"raw": "{{sup_base_url}}/v1/areas/84",
+					"host": [
+						"{{sup_base_url}}"
+					],
+					"path": [
+						"v1",
+						"areas",
+						"84"
+					]
+				}
+			},
+			"response": []
+		},
+		{
+			"name": "/v1/areas/:id",
+			"request": {
+				"method": "DELETE",
+				"header": [
+					{
+						"key": "Content-Type",
+						"name": "Content-Type",
+						"type": "text",
+						"value": "application/json"
+					}
+				],
+				"body": {
+					"mode": "raw",
+					"raw": ""
+				},
+				"url": {
+					"raw": "{{sup_base_url}}/v1/areas/16",
+					"host": [
+						"{{sup_base_url}}"
+					],
+					"path": [
+						"v1",
+						"areas",
+						"16"
+					]
+				}
+			},
+			"response": []
+		},
+		{
+			"name": "/v1/states",
+			"request": {
+				"method": "GET",
+				"header": [],
+				"url": {
+					"raw": "{{sup_base_url}}/v1/states?flagId=1",
+					"host": [
+						"{{sup_base_url}}"
+					],
+					"path": [
+						"v1",
+						"states"
+					],
+					"query": [
+						{
+							"key": "flagId",
+							"value": "1"
+						}
+					]
+				}
+			},
+			"response": []
+		},
+		{
+			"name": "/v1/states/:id",
+			"request": {
+				"method": "GET",
+				"header": [],
+				"url": {
+					"raw": "{{sup_base_url}}/v1/states/1",
+					"host": [
+						"{{sup_base_url}}"
+					],
+					"path": [
+						"v1",
+						"states",
+						"1"
+					]
+				}
+			},
+			"response": []
+		},
+		{
+			"name": "/v1/states",
+			"request": {
+				"method": "POST",
+				"header": [
+					{
+						"key": "Content-Type",
+						"name": "Content-Type",
+						"type": "text",
+						"value": "application/json"
+					}
+				],
+				"body": {
+					"mode": "raw",
+					"raw": "{\n\t\"name\": \"name\"\n}"
+				},
+				"url": {
+					"raw": "{{sup_base_url}}/v1/states",
+					"host": [
+						"{{sup_base_url}}"
+					],
+					"path": [
+						"v1",
+						"states"
+					]
+				}
+			},
+			"response": []
+		},
+		{
+			"name": "/v1/states/:id",
+			"request": {
+				"method": "PATCH",
+				"header": [
+					{
+						"key": "Content-Type",
+						"name": "Content-Type",
+						"value": "application/json",
+						"type": "text"
+					}
+				],
+				"body": {
+					"mode": "raw",
+					"raw": "{\n\t\"name\": \"changed\"\n}"
+				},
+				"url": {
+					"raw": "{{sup_base_url}}/v1/states/34",
+					"host": [
+						"{{sup_base_url}}"
+					],
+					"path": [
+						"v1",
+						"states",
+						"34"
+					]
+				}
+			},
+			"response": []
+		},
+		{
+			"name": "/v1/states/:id",
+			"request": {
+				"method": "DELETE",
+				"header": [
+					{
+						"key": "Content-Type",
+						"name": "Content-Type",
+						"type": "text",
+						"value": "application/json"
+					}
+				],
+				"body": {
+					"mode": "raw",
+					"raw": ""
+				},
+				"url": {
+					"raw": "{{sup_base_url}}/v1/states/34",
+					"host": [
+						"{{sup_base_url}}"
+					],
+					"path": [
+						"v1",
+						"states",
+						"34"
+					]
+				}
+			},
+			"response": []
+		},
+		{
+			"name": "/v1/transaction_media",
+			"request": {
+				"method": "GET",
+				"header": [],
+				"url": {
+					"raw": "{{sup_base_url}}/v1/transaction_media?flagId1",
+					"host": [
+						"{{sup_base_url}}"
+					],
+					"path": [
+						"v1",
+						"transaction_media"
+					],
+					"query": [
+						{
+							"key": "flagId1",
+							"value": null
+						}
+					]
+				}
+			},
+			"response": []
+		},
+		{
+			"name": "/v1/transaction_media/:id",
+			"request": {
+				"method": "GET",
+				"header": [],
+				"url": {
+					"raw": "{{sup_base_url}}/v1/transaction_media/1",
+					"host": [
+						"{{sup_base_url}}"
+					],
+					"path": [
+						"v1",
+						"transaction_media",
+						"1"
+					]
+				}
+			},
+			"response": []
+		},
+		{
+			"name": "/v1/transaction_methods",
+			"request": {
+				"method": "GET",
+				"header": [],
+				"url": {
+					"raw": "{{sup_base_url}}/v1/transaction_methods?flagId=1",
+					"host": [
+						"{{sup_base_url}}"
+					],
+					"path": [
+						"v1",
+						"transaction_methods"
+					],
+					"query": [
+						{
+							"key": "flagId",
+							"value": "1"
+						}
+					]
+				}
+			},
+			"response": []
+		},
+		{
+			"name": "/v1/transaction_methods/:id",
+			"request": {
+				"method": "GET",
+				"header": [],
+				"url": {
+					"raw": "{{sup_base_url}}/v1/transaction_methods/1",
+					"host": [
+						"{{sup_base_url}}"
+					],
+					"path": [
+						"v1",
+						"transaction_methods",
+						"1"
+					]
+				}
+			},
+			"response": []
+		},
+		{
+			"name": "/v1/transaction_situations",
+			"request": {
+				"method": "GET",
+				"header": [],
+				"url": {
+					"raw": "{{sup_base_url}}/v1/transaction_situations?flagId=1",
+					"host": [
+						"{{sup_base_url}}"
+					],
+					"path": [
+						"v1",
+						"transaction_situations"
+					],
+					"query": [
+						{
+							"key": "flagId",
+							"value": "1"
+						}
+					]
+				}
+			},
+			"response": []
+		},
+		{
+			"name": "/v1/transaction_situations/:id",
+			"request": {
+				"method": "GET",
+				"header": [],
+				"url": {
+					"raw": "{{sup_base_url}}/v1/transaction_situations/1",
+					"host": [
+						"{{sup_base_url}}"
+					],
+					"path": [
+						"v1",
+						"transaction_situations",
+						"1"
+					]
+				}
+			},
+			"response": []
+		},
+		{
+			"name": "/v1/transaction_type_grades",
+			"request": {
+				"method": "GET",
+				"header": [],
+				"url": {
+					"raw": "{{sup_base_url}}/v1/transaction_type_grades?flagId=1",
+					"host": [
+						"{{sup_base_url}}"
+					],
+					"path": [
+						"v1",
+						"transaction_type_grades"
+					],
+					"query": [
+						{
+							"key": "flagId",
+							"value": "1"
+						}
+					]
+				}
+			},
+			"response": []
+		},
+		{
+			"name": "/v1/transaction_type_grades/:id",
+			"request": {
+				"method": "GET",
+				"header": [],
+				"url": {
+					"raw": "{{sup_base_url}}/v1/transaction_type_grades/1",
+					"host": [
+						"{{sup_base_url}}"
+					],
+					"path": [
+						"v1",
+						"transaction_type_grades",
+						"1"
+					]
+				}
+			},
+			"response": []
+		},
+		{
+			"name": "/v1/transaction_types",
+			"request": {
+				"method": "GET",
+				"header": [],
+				"url": {
+					"raw": "{{sup_base_url}}/v1/transaction_types?flagId=1",
+					"host": [
+						"{{sup_base_url}}"
+					],
+					"path": [
+						"v1",
+						"transaction_types"
+					],
+					"query": [
+						{
+							"key": "flagId",
+							"value": "1"
+						}
+					]
+				}
+			},
+			"response": []
+		},
+		{
+			"name": "/v1/transaction_types/:id",
+			"request": {
+				"method": "GET",
+				"header": [],
+				"url": {
+					"raw": "{{sup_base_url}}/v1/transaction_types/1",
+					"host": [
+						"{{sup_base_url}}"
+					],
+					"path": [
+						"v1",
+						"transaction_types",
+						"1"
+					]
+				}
+			},
+			"response": []
+		},
+		{
+			"name": "/v1/transactions",
+			"request": {
+				"method": "GET",
+				"header": [
+					{
+						"key": "authToken",
+						"value": "1ccf5d41aff2371c0be4672f6cb3b0db",
+						"type": "text"
+					}
+				],
+				"url": {
+					"raw": "{{sup_base_url}}/v1/transactions?",
+					"host": [
+						"{{sup_base_url}}"
+					],
+					"path": [
+						"v1",
+						"transactions"
+					],
+					"query": [
+						{
+							"key": "transactionMethodId",
+							"value": "1",
+							"disabled": true
+						},
+						{
+							"key": "identifier",
+							"value": "abc",
+							"disabled": true
+						},
+						{
+							"key": "amount",
+							"value": "123",
+							"disabled": true
+						},
+						{
+							"key": "sourceTransactionId",
+							"value": "123",
+							"disabled": true
+						},
+						{
+							"key": "bankAccountId",
+							"value": "1",
+							"disabled": true
+						},
+						{
+							"key": "bankAccountTypeId",
+							"value": "2",
+							"disabled": true
+						},
+						{
+							"key": "customerId",
+							"value": "3",
+							"disabled": true
+						},
+						{
+							"key": "order",
+							"value": "methodName",
+							"disabled": true
+						},
+						{
+							"key": "orderType",
+							"value": "DESC",
+							"disabled": true
+						},
+						{
+							"key": "oilChartStructureId",
+							"value": "11",
+							"disabled": true
+						}
+					]
+				}
+			},
+			"response": []
+		},
+		{
+			"name": "/v1/transactions/:id",
+			"request": {
+				"method": "GET",
+				"header": [],
+				"url": {
+					"raw": "{{sup_base_url}}/v1/transactions/1",
+					"host": [
+						"{{sup_base_url}}"
+					],
+					"path": [
+						"v1",
+						"transactions",
+						"1"
+					]
+				}
+			},
+			"response": []
+		},
+		{
+			"name": "/v1/user_genders",
+			"request": {
+				"method": "GET",
+				"header": [],
+				"url": {
+					"raw": "{{sup_base_url}}/v1/user_genders?flagId=1",
+					"host": [
+						"{{sup_base_url}}"
+					],
+					"path": [
+						"v1",
+						"user_genders"
+					],
+					"query": [
+						{
+							"key": "flagId",
+							"value": "1"
+						}
+					]
+				}
+			},
+			"response": []
+		},
+		{
+			"name": "/v1/user_genders/:id",
+			"request": {
+				"method": "GET",
+				"header": [],
+				"url": {
+					"raw": "{{sup_base_url}}/v1/user_genders/1",
+					"host": [
+						"{{sup_base_url}}"
+					],
+					"path": [
+						"v1",
+						"user_genders",
+						"1"
+					]
+				}
+			},
+			"response": []
+		},
+		{
+			"name": "/v1/user_levels",
+			"request": {
+				"method": "GET",
+				"header": [],
+				"url": {
+					"raw": "{{sup_base_url}}/v1/user_levels?flagId=1",
+					"host": [
+						"{{sup_base_url}}"
+					],
+					"path": [
+						"v1",
+						"user_levels"
+					],
+					"query": [
+						{
+							"key": "flagId",
+							"value": "1"
+						}
+					]
+				}
+			},
+			"response": []
+		},
+		{
+			"name": "/v1/user_levels/:id",
+			"request": {
+				"method": "GET",
+				"header": [],
+				"url": {
+					"raw": "{{sup_base_url}}/v1/user_levels/1",
+					"host": [
+						"{{sup_base_url}}"
+					],
+					"path": [
+						"v1",
+						"user_levels",
+						"1"
+					]
+				}
+			},
+			"response": []
+		},
+		{
+			"name": "/v1/user_situations",
+			"request": {
+				"method": "GET",
+				"header": [],
+				"url": {
+					"raw": "{{sup_base_url}}/v1/user_situations?flagId=1",
+					"host": [
+						"{{sup_base_url}}"
+					],
+					"path": [
+						"v1",
+						"user_situations"
+					],
+					"query": [
+						{
+							"key": "flagId",
+							"value": "1"
+						}
+					]
+				}
+			},
+			"response": []
+		},
+		{
+			"name": "/v1/user_situations/:id",
+			"request": {
+				"method": "GET",
+				"header": [],
+				"url": {
+					"raw": "{{sup_base_url}}/v1/user_situations/1",
+					"host": [
+						"{{sup_base_url}}"
+					],
+					"path": [
+						"v1",
+						"user_situations",
+						"1"
+					]
+				}
+			},
+			"response": []
+		}
+	],
+	"protocolProfileBehavior": {}
+}

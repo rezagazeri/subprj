@@ -1,0 +1,580 @@
+<?xml version="1.0" encoding="UTF-8"?>
+<wsdl:definitions xmlns:wsdl="http://schemas.xmlsoap.org/wsdl/" xmlns:ns1="com.misc.bis.behdad.service"
+                  name="IdentifierService" targetNamespace="com.misc.bis.behdad.service">
+    <wsdl:types>
+        <xs:schema xmlns:xs="http://www.w3.org/2001/XMLSchema" xmlns:tns="com.misc.bis.behdad.service"
+                   attributeFormDefault="unqualified" elementFormDefault="unqualified"
+                   targetNamespace="com.misc.bis.behdad.service">
+            <xs:element name="addIdentifier" type="tns:addIdentifier"/>
+            <xs:element name="addIdentifierResponse" type="tns:addIdentifierResponse"/>
+            <xs:element name="addIdentifiers" type="tns:addIdentifiers"/>
+            <xs:element name="addIdentifiersResponse" type="tns:addIdentifiersResponse"/>
+            <xs:element name="generateIdentifier" type="tns:generateIdentifier"/>
+            <xs:element name="generateIdentifierByOrganInfo" type="tns:generateIdentifierByOrganInfo"/>
+            <xs:element name="generateIdentifierByOrganInfoResponse" type="tns:generateIdentifierByOrganInfoResponse"/>
+            <xs:element name="generateIdentifierResponse" type="tns:generateIdentifierResponse"/>
+            <xs:element name="getActiveIdentifiers" type="tns:getActiveIdentifiers"/>
+            <xs:element name="getActiveIdentifiersResponse" type="tns:getActiveIdentifiersResponse"/>
+            <xs:element name="isEffectiveIdentifier" type="tns:isEffectiveIdentifier"/>
+            <xs:element name="isEffectiveIdentifierResponse" type="tns:isEffectiveIdentifierResponse"/>
+            <xs:element name="isExistIdentifier" type="tns:isExistIdentifier"/>
+            <xs:element name="isExistIdentifierResponse" type="tns:isExistIdentifierResponse"/>
+            <xs:element name="isValidIdentifier" type="tns:isValidIdentifier"/>
+            <xs:element name="isValidIdentifierResponse" type="tns:isValidIdentifierResponse"/>
+            <xs:element name="isVerhoeff" type="tns:isVerhoeff"/>
+            <xs:element name="isVerhoeffResponse" type="tns:isVerhoeffResponse"/>
+            <xs:element name="removeIdentifier" type="tns:removeIdentifier"/>
+            <xs:element name="removeIdentifierResponse" type="tns:removeIdentifierResponse"/>
+            <xs:element name="removeIdentifiers" type="tns:removeIdentifiers"/>
+            <xs:element name="removeIdentifiersResponse" type="tns:removeIdentifiersResponse"/>
+            <xs:complexType name="isVerhoeff">
+                <xs:sequence>
+                    <xs:element minOccurs="0" name="identifierCode" type="xs:string"/>
+                    <xs:element minOccurs="0" name="amount" type="xs:decimal"/>
+                </xs:sequence>
+            </xs:complexType>
+            <xs:complexType name="isVerhoeffResponse">
+                <xs:sequence>
+                    <xs:element name="return" type="xs:boolean"/>
+                </xs:sequence>
+            </xs:complexType>
+            <xs:complexType name="addIdentifiers">
+                <xs:sequence>
+                    <xs:element minOccurs="0" name="arg0" type="tns:credential"/>
+                    <xs:element minOccurs="0" name="arg1" type="tns:batchIdentifierInfo"/>
+                </xs:sequence>
+            </xs:complexType>
+            <xs:complexType name="credential">
+                <xs:sequence>
+                    <xs:element minOccurs="0" name="password" type="xs:string"/>
+                    <xs:element minOccurs="0" name="username" type="xs:string"/>
+                </xs:sequence>
+            </xs:complexType>
+            <xs:complexType name="batchIdentifierInfo">
+                <xs:sequence>
+                    <xs:element minOccurs="0" name="accountNumber" type="xs:string"/>
+                    <xs:element maxOccurs="unbounded" minOccurs="0" name="identifierAmountPairList" nillable="true"
+                                type="tns:identifierAmountPair"/>
+                    <xs:element minOccurs="0" name="toDate" type="xs:string"/>
+                </xs:sequence>
+            </xs:complexType>
+            <xs:complexType name="identifierAmountPair">
+                <xs:sequence>
+                    <xs:element minOccurs="0" name="amount" type="xs:decimal"/>
+                    <xs:element minOccurs="0" name="identifier" type="xs:string"/>
+                </xs:sequence>
+            </xs:complexType>
+            <xs:complexType name="addIdentifiersResponse">
+                <xs:sequence>
+                    <xs:element maxOccurs="unbounded" minOccurs="0" name="return" type="tns:identifierResult"/>
+                </xs:sequence>
+            </xs:complexType>
+            <xs:complexType name="identifierResult">
+                <xs:sequence>
+                    <xs:element minOccurs="0" name="amount" type="xs:decimal"/>
+                    <xs:element minOccurs="0" name="description" type="xs:string"/>
+                    <xs:element minOccurs="0" name="identifier" type="xs:string"/>
+                    <xs:element name="result" type="xs:boolean"/>
+                </xs:sequence>
+            </xs:complexType>
+            <xs:complexType name="generateIdentifier">
+                <xs:sequence>
+                    <xs:element minOccurs="0" name="identifierPrefix" type="xs:string"/>
+                    <xs:element minOccurs="0" name="identifierBody" type="xs:string"/>
+                    <xs:element minOccurs="0" name="amount" type="xs:decimal"/>
+                </xs:sequence>
+            </xs:complexType>
+            <xs:complexType name="generateIdentifierResponse">
+                <xs:sequence>
+                    <xs:element minOccurs="0" name="return" type="xs:string"/>
+                </xs:sequence>
+            </xs:complexType>
+            <xs:complexType name="removeIdentifiers">
+                <xs:sequence>
+                    <xs:element minOccurs="0" name="arg0" type="tns:credential"/>
+                    <xs:element minOccurs="0" name="arg1" type="tns:batchIdentifierRemoveInfo"/>
+                </xs:sequence>
+            </xs:complexType>
+            <xs:complexType name="batchIdentifierRemoveInfo">
+                <xs:sequence>
+                    <xs:element minOccurs="0" name="accountNumber" type="xs:string"/>
+                    <xs:element maxOccurs="unbounded" minOccurs="0" name="identifierCodeList" nillable="true"
+                                type="xs:string"/>
+                </xs:sequence>
+            </xs:complexType>
+            <xs:complexType name="removeIdentifiersResponse">
+                <xs:sequence>
+                    <xs:element maxOccurs="unbounded" minOccurs="0" name="return" type="tns:identifierRemoveResult"/>
+                </xs:sequence>
+            </xs:complexType>
+            <xs:complexType name="identifierRemoveResult">
+                <xs:sequence>
+                    <xs:element minOccurs="0" name="description" type="xs:string"/>
+                    <xs:element minOccurs="0" name="identifier" type="xs:string"/>
+                    <xs:element name="result" type="xs:boolean"/>
+                </xs:sequence>
+            </xs:complexType>
+            <xs:complexType name="getActiveIdentifiers">
+                <xs:sequence>
+                    <xs:element minOccurs="0" name="arg0" type="tns:credential"/>
+                    <xs:element minOccurs="0" name="accountNumber" type="xs:string"/>
+                    <xs:element minOccurs="0" name="startShamsiDate" type="xs:string"/>
+                    <xs:element minOccurs="0" name="endShamsiDate" type="xs:string"/>
+                </xs:sequence>
+            </xs:complexType>
+            <xs:complexType name="getActiveIdentifiersResponse">
+                <xs:sequence>
+                    <xs:element maxOccurs="unbounded" minOccurs="0" name="return" type="tns:identifierDetail"/>
+                </xs:sequence>
+            </xs:complexType>
+            <xs:complexType name="identifierDetail">
+                <xs:sequence>
+                    <xs:element minOccurs="0" name="accountNumber" type="xs:string"/>
+                    <xs:element name="active" type="xs:boolean"/>
+                    <xs:element minOccurs="0" name="amount" type="xs:decimal"/>
+                    <xs:element minOccurs="0" name="endDate" type="xs:string"/>
+                    <xs:element minOccurs="0" name="identifier" type="xs:string"/>
+                    <xs:element minOccurs="0" name="lastUpdate" type="xs:string"/>
+                    <xs:element minOccurs="0" name="startDate" type="xs:string"/>
+                </xs:sequence>
+            </xs:complexType>
+            <xs:complexType name="isValidIdentifier">
+                <xs:sequence>
+                    <xs:element minOccurs="0" name="arg0" type="tns:credential"/>
+                    <xs:element minOccurs="0" name="identifierCode" type="xs:string"/>
+                    <xs:element minOccurs="0" name="accountNumber" type="xs:string"/>
+                    <xs:element minOccurs="0" name="transactionAmount" type="xs:decimal"/>
+                </xs:sequence>
+            </xs:complexType>
+            <xs:complexType name="isValidIdentifierResponse">
+                <xs:sequence>
+                    <xs:element name="return" type="xs:boolean"/>
+                </xs:sequence>
+            </xs:complexType>
+            <xs:complexType name="addIdentifier">
+                <xs:sequence>
+                    <xs:element minOccurs="0" name="arg0" type="tns:credential"/>
+                    <xs:element minOccurs="0" name="arg1" type="tns:identifierInfo"/>
+                </xs:sequence>
+            </xs:complexType>
+            <xs:complexType name="identifierInfo">
+                <xs:sequence>
+                    <xs:element minOccurs="0" name="accountNumber" type="xs:string"/>
+                    <xs:element minOccurs="0" name="amount" type="xs:decimal"/>
+                    <xs:element minOccurs="0" name="identifier" type="xs:string"/>
+                    <xs:element minOccurs="0" name="toDate" type="xs:string"/>
+                </xs:sequence>
+            </xs:complexType>
+            <xs:complexType name="addIdentifierResponse">
+                <xs:sequence/>
+            </xs:complexType>
+            <xs:complexType name="generateIdentifierByOrganInfo">
+                <xs:sequence>
+                    <xs:element minOccurs="0" name="arg0" type="tns:identifierParts"/>
+                    <xs:element minOccurs="0" name="amount" type="xs:decimal"/>
+                </xs:sequence>
+            </xs:complexType>
+            <xs:complexType name="identifierParts">
+                <xs:sequence>
+                    <xs:element minOccurs="0" name="baseCode" type="xs:string"/>
+                    <xs:element minOccurs="0" name="identifierPrefix" type="xs:string"/>
+                    <xs:element minOccurs="0" name="incomeIndexCode" type="xs:string"/>
+                    <xs:element minOccurs="0" name="incomeSubsidiaryCode" type="xs:string"/>
+                    <xs:element minOccurs="0" name="organCustomCode" type="xs:string"/>
+                </xs:sequence>
+            </xs:complexType>
+            <xs:complexType name="generateIdentifierByOrganInfoResponse">
+                <xs:sequence>
+                    <xs:element minOccurs="0" name="return" type="xs:string"/>
+                </xs:sequence>
+            </xs:complexType>
+            <xs:complexType name="isEffectiveIdentifier">
+                <xs:sequence>
+                    <xs:element minOccurs="0" name="arg0" type="tns:credential"/>
+                    <xs:element minOccurs="0" name="identifierCode" type="xs:string"/>
+                    <xs:element minOccurs="0" name="accountNumber" type="xs:string"/>
+                </xs:sequence>
+            </xs:complexType>
+            <xs:complexType name="isEffectiveIdentifierResponse">
+                <xs:sequence>
+                    <xs:element name="return" type="xs:boolean"/>
+                </xs:sequence>
+            </xs:complexType>
+            <xs:complexType name="isExistIdentifier">
+                <xs:sequence>
+                    <xs:element minOccurs="0" name="arg0" type="tns:credential"/>
+                    <xs:element minOccurs="0" name="identifierCode" type="xs:string"/>
+                    <xs:element minOccurs="0" name="accountNumber" type="xs:string"/>
+                </xs:sequence>
+            </xs:complexType>
+            <xs:complexType name="isExistIdentifierResponse">
+                <xs:sequence>
+                    <xs:element name="return" type="xs:boolean"/>
+                </xs:sequence>
+            </xs:complexType>
+            <xs:complexType name="removeIdentifier">
+                <xs:sequence>
+                    <xs:element minOccurs="0" name="arg0" type="tns:credential"/>
+                    <xs:element minOccurs="0" name="identifierCode" type="xs:string"/>
+                    <xs:element minOccurs="0" name="accountNumber" type="xs:string"/>
+                </xs:sequence>
+            </xs:complexType>
+            <xs:complexType name="removeIdentifierResponse">
+                <xs:sequence/>
+            </xs:complexType>
+            <xs:element name="InvalidIdentifierException" type="tns:InvalidIdentifierException"/>
+            <xs:complexType name="InvalidIdentifierException">
+                <xs:sequence>
+                    <xs:element minOccurs="0" name="message" type="xs:string"/>
+                </xs:sequence>
+            </xs:complexType>
+            <xs:element name="InvalidCredentialException" type="tns:InvalidCredentialException"/>
+            <xs:complexType name="InvalidCredentialException">
+                <xs:sequence>
+                    <xs:element minOccurs="0" name="message" type="xs:string"/>
+                </xs:sequence>
+            </xs:complexType>
+            <xs:element name="UnableToAuthenticateException" type="tns:UnableToAuthenticateException"/>
+            <xs:complexType name="UnableToAuthenticateException">
+                <xs:sequence>
+                    <xs:element minOccurs="0" name="message" type="xs:string"/>
+                </xs:sequence>
+            </xs:complexType>
+            <xs:element name="InvalidAllotmentItemInfoException" type="tns:InvalidAllotmentItemInfoException"/>
+            <xs:complexType name="InvalidAllotmentItemInfoException">
+                <xs:sequence>
+                    <xs:element minOccurs="0" name="message" type="xs:string"/>
+                </xs:sequence>
+            </xs:complexType>
+            <xs:element name="UnableToGenerateIdentifierException" type="tns:UnableToGenerateIdentifierException"/>
+            <xs:complexType name="UnableToGenerateIdentifierException">
+                <xs:sequence>
+                    <xs:element minOccurs="0" name="message" type="xs:string"/>
+                </xs:sequence>
+            </xs:complexType>
+            <xs:element name="InvalidAmountException" type="tns:InvalidAmountException"/>
+            <xs:complexType name="InvalidAmountException">
+                <xs:sequence>
+                    <xs:element minOccurs="0" name="message" type="xs:string"/>
+                </xs:sequence>
+            </xs:complexType>
+            <xs:element name="IdentifierNotFoundException" type="tns:IdentifierNotFoundException"/>
+            <xs:complexType name="IdentifierNotFoundException">
+                <xs:sequence>
+                    <xs:element minOccurs="0" name="message" type="xs:string"/>
+                </xs:sequence>
+            </xs:complexType>
+            <xs:element name="VerhoeffException" type="tns:VerhoeffException"/>
+            <xs:complexType name="VerhoeffException">
+                <xs:sequence>
+                    <xs:element minOccurs="0" name="message" type="xs:string"/>
+                </xs:sequence>
+            </xs:complexType>
+            <xs:element name="IdentifierIsNotEffectiveException" type="tns:IdentifierIsNotEffectiveException"/>
+            <xs:complexType name="IdentifierIsNotEffectiveException">
+                <xs:sequence>
+                    <xs:element minOccurs="0" name="message" type="xs:string"/>
+                </xs:sequence>
+            </xs:complexType>
+            <xs:element name="InvalidAccountNumberException" type="tns:InvalidAccountNumberException"/>
+            <xs:complexType name="InvalidAccountNumberException">
+                <xs:sequence>
+                    <xs:element minOccurs="0" name="message" type="xs:string"/>
+                </xs:sequence>
+            </xs:complexType>
+            <xs:element name="IdentifierIsExistException" type="tns:IdentifierIsExistException"/>
+            <xs:complexType name="IdentifierIsExistException">
+                <xs:sequence>
+                    <xs:element minOccurs="0" name="message" type="xs:string"/>
+                </xs:sequence>
+            </xs:complexType>
+            <xs:element name="InvalidDateException" type="tns:InvalidDateException"/>
+            <xs:complexType name="InvalidDateException">
+                <xs:sequence>
+                    <xs:element minOccurs="0" name="message" type="xs:string"/>
+                </xs:sequence>
+            </xs:complexType>
+            <xs:element name="InvalidIdentifierCodeException" type="tns:InvalidIdentifierCodeException"/>
+            <xs:complexType name="InvalidIdentifierCodeException">
+                <xs:sequence>
+                    <xs:element minOccurs="0" name="message" type="xs:string"/>
+                </xs:sequence>
+            </xs:complexType>
+        </xs:schema>
+    </wsdl:types>
+    <wsdl:message name="InvalidIdentifierException">
+        <wsdl:part element="ns1:InvalidIdentifierException" name="InvalidIdentifierException">
+        </wsdl:part>
+    </wsdl:message>
+    <wsdl:message name="InvalidCredentialException">
+        <wsdl:part element="ns1:InvalidCredentialException" name="InvalidCredentialException">
+        </wsdl:part>
+    </wsdl:message>
+    <wsdl:message name="isVerhoeff">
+        <wsdl:part element="ns1:isVerhoeff" name="parameters">
+        </wsdl:part>
+    </wsdl:message>
+    <wsdl:message name="UnableToGenerateIdentifierException">
+        <wsdl:part element="ns1:UnableToGenerateIdentifierException" name="UnableToGenerateIdentifierException">
+        </wsdl:part>
+    </wsdl:message>
+    <wsdl:message name="IdentifierNotFoundException">
+        <wsdl:part element="ns1:IdentifierNotFoundException" name="IdentifierNotFoundException">
+        </wsdl:part>
+    </wsdl:message>
+    <wsdl:message name="generateIdentifier">
+        <wsdl:part element="ns1:generateIdentifier" name="parameters">
+        </wsdl:part>
+    </wsdl:message>
+    <wsdl:message name="generateIdentifierByOrganInfo">
+        <wsdl:part element="ns1:generateIdentifierByOrganInfo" name="parameters">
+        </wsdl:part>
+    </wsdl:message>
+    <wsdl:message name="InvalidAllotmentItemInfoException">
+        <wsdl:part element="ns1:InvalidAllotmentItemInfoException" name="InvalidAllotmentItemInfoException">
+        </wsdl:part>
+    </wsdl:message>
+    <wsdl:message name="VerhoeffException">
+        <wsdl:part element="ns1:VerhoeffException" name="VerhoeffException">
+        </wsdl:part>
+    </wsdl:message>
+    <wsdl:message name="isExistIdentifierResponse">
+        <wsdl:part element="ns1:isExistIdentifierResponse" name="parameters">
+        </wsdl:part>
+    </wsdl:message>
+    <wsdl:message name="IdentifierIsNotEffectiveException">
+        <wsdl:part element="ns1:IdentifierIsNotEffectiveException" name="IdentifierIsNotEffectiveException">
+        </wsdl:part>
+    </wsdl:message>
+    <wsdl:message name="UnableToAuthenticateException">
+        <wsdl:part element="ns1:UnableToAuthenticateException" name="UnableToAuthenticateException">
+        </wsdl:part>
+    </wsdl:message>
+    <wsdl:message name="removeIdentifierResponse">
+        <wsdl:part element="ns1:removeIdentifierResponse" name="parameters">
+        </wsdl:part>
+    </wsdl:message>
+    <wsdl:message name="addIdentifiers">
+        <wsdl:part element="ns1:addIdentifiers" name="parameters">
+        </wsdl:part>
+    </wsdl:message>
+    <wsdl:message name="getActiveIdentifiers">
+        <wsdl:part element="ns1:getActiveIdentifiers" name="parameters">
+        </wsdl:part>
+    </wsdl:message>
+    <wsdl:message name="addIdentifierResponse">
+        <wsdl:part element="ns1:addIdentifierResponse" name="parameters">
+        </wsdl:part>
+    </wsdl:message>
+    <wsdl:message name="addIdentifier">
+        <wsdl:part element="ns1:addIdentifier" name="parameters">
+        </wsdl:part>
+    </wsdl:message>
+    <wsdl:message name="isVerhoeffResponse">
+        <wsdl:part element="ns1:isVerhoeffResponse" name="parameters">
+        </wsdl:part>
+    </wsdl:message>
+    <wsdl:message name="InvalidAmountException">
+        <wsdl:part element="ns1:InvalidAmountException" name="InvalidAmountException">
+        </wsdl:part>
+    </wsdl:message>
+    <wsdl:message name="removeIdentifiersResponse">
+        <wsdl:part element="ns1:removeIdentifiersResponse" name="parameters">
+        </wsdl:part>
+    </wsdl:message>
+    <wsdl:message name="InvalidAccountNumberException">
+        <wsdl:part element="ns1:InvalidAccountNumberException" name="InvalidAccountNumberException">
+        </wsdl:part>
+    </wsdl:message>
+    <wsdl:message name="IdentifierIsExistException">
+        <wsdl:part element="ns1:IdentifierIsExistException" name="IdentifierIsExistException">
+        </wsdl:part>
+    </wsdl:message>
+    <wsdl:message name="isEffectiveIdentifierResponse">
+        <wsdl:part element="ns1:isEffectiveIdentifierResponse" name="parameters">
+        </wsdl:part>
+    </wsdl:message>
+    <wsdl:message name="isEffectiveIdentifier">
+        <wsdl:part element="ns1:isEffectiveIdentifier" name="parameters">
+        </wsdl:part>
+    </wsdl:message>
+    <wsdl:message name="isExistIdentifier">
+        <wsdl:part element="ns1:isExistIdentifier" name="parameters">
+        </wsdl:part>
+    </wsdl:message>
+    <wsdl:message name="InvalidIdentifierCodeException">
+        <wsdl:part element="ns1:InvalidIdentifierCodeException" name="InvalidIdentifierCodeException">
+        </wsdl:part>
+    </wsdl:message>
+    <wsdl:message name="getActiveIdentifiersResponse">
+        <wsdl:part element="ns1:getActiveIdentifiersResponse" name="parameters">
+        </wsdl:part>
+    </wsdl:message>
+    <wsdl:message name="removeIdentifiers">
+        <wsdl:part element="ns1:removeIdentifiers" name="parameters">
+        </wsdl:part>
+    </wsdl:message>
+    <wsdl:message name="isValidIdentifier">
+        <wsdl:part element="ns1:isValidIdentifier" name="parameters">
+        </wsdl:part>
+    </wsdl:message>
+    <wsdl:message name="isValidIdentifierResponse">
+        <wsdl:part element="ns1:isValidIdentifierResponse" name="parameters">
+        </wsdl:part>
+    </wsdl:message>
+    <wsdl:message name="addIdentifiersResponse">
+        <wsdl:part element="ns1:addIdentifiersResponse" name="parameters">
+        </wsdl:part>
+    </wsdl:message>
+    <wsdl:message name="generateIdentifierResponse">
+        <wsdl:part element="ns1:generateIdentifierResponse" name="parameters">
+        </wsdl:part>
+    </wsdl:message>
+    <wsdl:message name="InvalidDateException">
+        <wsdl:part element="ns1:InvalidDateException" name="InvalidDateException">
+        </wsdl:part>
+    </wsdl:message>
+    <wsdl:message name="generateIdentifierByOrganInfoResponse">
+        <wsdl:part element="ns1:generateIdentifierByOrganInfoResponse" name="parameters">
+        </wsdl:part>
+    </wsdl:message>
+    <wsdl:message name="removeIdentifier">
+        <wsdl:part element="ns1:removeIdentifier" name="parameters">
+        </wsdl:part>
+    </wsdl:message>
+    <wsdl:portType name="IdentifierService">
+        <wsdl:operation name="isVerhoeff">
+            <wsdl:input message="ns1:isVerhoeff" name="isVerhoeff">
+            </wsdl:input>
+            <wsdl:output message="ns1:isVerhoeffResponse" name="isVerhoeffResponse">
+            </wsdl:output>
+            <wsdl:fault message="ns1:InvalidIdentifierException" name="InvalidIdentifierException">
+            </wsdl:fault>
+        </wsdl:operation>
+        <wsdl:operation name="addIdentifiers">
+            <wsdl:input message="ns1:addIdentifiers" name="addIdentifiers">
+            </wsdl:input>
+            <wsdl:output message="ns1:addIdentifiersResponse" name="addIdentifiersResponse">
+            </wsdl:output>
+            <wsdl:fault message="ns1:UnableToAuthenticateException" name="UnableToAuthenticateException">
+            </wsdl:fault>
+            <wsdl:fault message="ns1:InvalidCredentialException" name="InvalidCredentialException">
+            </wsdl:fault>
+        </wsdl:operation>
+        <wsdl:operation name="generateIdentifier">
+            <wsdl:input message="ns1:generateIdentifier" name="generateIdentifier">
+            </wsdl:input>
+            <wsdl:output message="ns1:generateIdentifierResponse" name="generateIdentifierResponse">
+            </wsdl:output>
+            <wsdl:fault message="ns1:InvalidAllotmentItemInfoException" name="InvalidAllotmentItemInfoException">
+            </wsdl:fault>
+            <wsdl:fault message="ns1:UnableToGenerateIdentifierException" name="UnableToGenerateIdentifierException">
+            </wsdl:fault>
+        </wsdl:operation>
+        <wsdl:operation name="removeIdentifiers">
+            <wsdl:input message="ns1:removeIdentifiers" name="removeIdentifiers">
+            </wsdl:input>
+            <wsdl:output message="ns1:removeIdentifiersResponse" name="removeIdentifiersResponse">
+            </wsdl:output>
+            <wsdl:fault message="ns1:UnableToAuthenticateException" name="UnableToAuthenticateException">
+            </wsdl:fault>
+            <wsdl:fault message="ns1:InvalidCredentialException" name="InvalidCredentialException">
+            </wsdl:fault>
+        </wsdl:operation>
+        <wsdl:operation name="getActiveIdentifiers">
+            <wsdl:input message="ns1:getActiveIdentifiers" name="getActiveIdentifiers">
+            </wsdl:input>
+            <wsdl:output message="ns1:getActiveIdentifiersResponse" name="getActiveIdentifiersResponse">
+            </wsdl:output>
+            <wsdl:fault message="ns1:UnableToAuthenticateException" name="UnableToAuthenticateException">
+            </wsdl:fault>
+            <wsdl:fault message="ns1:InvalidCredentialException" name="InvalidCredentialException">
+            </wsdl:fault>
+        </wsdl:operation>
+        <wsdl:operation name="isValidIdentifier">
+            <wsdl:input message="ns1:isValidIdentifier" name="isValidIdentifier">
+            </wsdl:input>
+            <wsdl:output message="ns1:isValidIdentifierResponse" name="isValidIdentifierResponse">
+            </wsdl:output>
+            <wsdl:fault message="ns1:VerhoeffException" name="VerhoeffException">
+            </wsdl:fault>
+            <wsdl:fault message="ns1:IdentifierIsNotEffectiveException" name="IdentifierIsNotEffectiveException">
+            </wsdl:fault>
+            <wsdl:fault message="ns1:UnableToAuthenticateException" name="UnableToAuthenticateException">
+            </wsdl:fault>
+            <wsdl:fault message="ns1:InvalidAmountException" name="InvalidAmountException">
+            </wsdl:fault>
+            <wsdl:fault message="ns1:InvalidCredentialException" name="InvalidCredentialException">
+            </wsdl:fault>
+            <wsdl:fault message="ns1:InvalidIdentifierException" name="InvalidIdentifierException">
+            </wsdl:fault>
+            <wsdl:fault message="ns1:IdentifierNotFoundException" name="IdentifierNotFoundException">
+            </wsdl:fault>
+        </wsdl:operation>
+        <wsdl:operation name="addIdentifier">
+            <wsdl:input message="ns1:addIdentifier" name="addIdentifier">
+            </wsdl:input>
+            <wsdl:output message="ns1:addIdentifierResponse" name="addIdentifierResponse">
+            </wsdl:output>
+            <wsdl:fault message="ns1:InvalidDateException" name="InvalidDateException">
+            </wsdl:fault>
+            <wsdl:fault message="ns1:InvalidIdentifierCodeException" name="InvalidIdentifierCodeException">
+            </wsdl:fault>
+            <wsdl:fault message="ns1:InvalidAmountException" name="InvalidAmountException">
+            </wsdl:fault>
+            <wsdl:fault message="ns1:UnableToAuthenticateException" name="UnableToAuthenticateException">
+            </wsdl:fault>
+            <wsdl:fault message="ns1:InvalidCredentialException" name="InvalidCredentialException">
+            </wsdl:fault>
+            <wsdl:fault message="ns1:InvalidAccountNumberException" name="InvalidAccountNumberException">
+            </wsdl:fault>
+            <wsdl:fault message="ns1:IdentifierIsExistException" name="IdentifierIsExistException">
+            </wsdl:fault>
+        </wsdl:operation>
+        <wsdl:operation name="generateIdentifierByOrganInfo">
+            <wsdl:input message="ns1:generateIdentifierByOrganInfo" name="generateIdentifierByOrganInfo">
+            </wsdl:input>
+            <wsdl:output message="ns1:generateIdentifierByOrganInfoResponse"
+                         name="generateIdentifierByOrganInfoResponse">
+            </wsdl:output>
+            <wsdl:fault message="ns1:InvalidAllotmentItemInfoException" name="InvalidAllotmentItemInfoException">
+            </wsdl:fault>
+            <wsdl:fault message="ns1:UnableToGenerateIdentifierException" name="UnableToGenerateIdentifierException">
+            </wsdl:fault>
+        </wsdl:operation>
+        <wsdl:operation name="isEffectiveIdentifier">
+            <wsdl:input message="ns1:isEffectiveIdentifier" name="isEffectiveIdentifier">
+            </wsdl:input>
+            <wsdl:output message="ns1:isEffectiveIdentifierResponse" name="isEffectiveIdentifierResponse">
+            </wsdl:output>
+            <wsdl:fault message="ns1:UnableToAuthenticateException" name="UnableToAuthenticateException">
+            </wsdl:fault>
+            <wsdl:fault message="ns1:InvalidCredentialException" name="InvalidCredentialException">
+            </wsdl:fault>
+            <wsdl:fault message="ns1:IdentifierNotFoundException" name="IdentifierNotFoundException">
+            </wsdl:fault>
+        </wsdl:operation>
+        <wsdl:operation name="isExistIdentifier">
+            <wsdl:input message="ns1:isExistIdentifier" name="isExistIdentifier">
+            </wsdl:input>
+            <wsdl:output message="ns1:isExistIdentifierResponse" name="isExistIdentifierResponse">
+            </wsdl:output>
+            <wsdl:fault message="ns1:UnableToAuthenticateException" name="UnableToAuthenticateException">
+            </wsdl:fault>
+            <wsdl:fault message="ns1:InvalidCredentialException" name="InvalidCredentialException">
+            </wsdl:fault>
+        </wsdl:operation>
+        <wsdl:operation name="removeIdentifier">
+            <wsdl:input message="ns1:removeIdentifier" name="removeIdentifier">
+            </wsdl:input>
+            <wsdl:output message="ns1:removeIdentifierResponse" name="removeIdentifierResponse">
+            </wsdl:output>
+            <wsdl:fault message="ns1:UnableToAuthenticateException" name="UnableToAuthenticateException">
+            </wsdl:fault>
+            <wsdl:fault message="ns1:InvalidCredentialException" name="InvalidCredentialException">
+            </wsdl:fault>
+            <wsdl:fault message="ns1:IdentifierNotFoundException" name="IdentifierNotFoundException">
+            </wsdl:fault>
+        </wsdl:operation>
+    </wsdl:portType>
+</wsdl:definitions>
