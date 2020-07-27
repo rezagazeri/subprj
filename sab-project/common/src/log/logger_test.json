@@ -1,0 +1,15 @@
+{
+    "logs": {
+        "level": "Debug",
+        "directory": "/home/hossein/Logs",
+        "maxLogPerFile": 10000,
+        "specials": [
+            "Error  :*",
+            "Info   : AddUser  ",
+            "Verbose  :    Search      ",
+            "Verbose   :    New ",
+            "Info: *",
+            "Info :Tag2"
+        ]
+    }
+}

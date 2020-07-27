@@ -49,6 +49,7 @@ class List {
 
   empty () {
     return new Promise(async (resolve, reject) => {
+      try{
       const client = await this.redis.getClient()
       const multi = client.multi()
       multi.lrange(this.name, start, end)
@@ -60,6 +61,9 @@ class List {
           resolve(replies[0])
         }
       })
+    } catch (e) {
+      reject(e)
+    }
     })
   }
 
